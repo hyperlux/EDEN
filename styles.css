@@ -1,10 +1,10 @@
 /* ===== CSS VARIABLES ===== */
 :root {
     /* Colors */
-    --primary-color: #D4A574;
-    --primary-dark: #B8935C;
-    --secondary-color: #8B6B47;
-    --accent-color: #E6C79C;
+    --primary-color: #a57ace;
+    --primary-dark: #b97ef1;
+    --secondary-color: #6772d5;
+    --accent-color: #80b7fed7;
     --text-dark: #2C2C2C;
     --text-light: #666666;
     --white: #FFFFFF;
@@ -21,6 +21,7 @@
     /* Typography */
     --font-primary: 'Inter', sans-serif;
     --font-heading: 'Playfair Display', serif;
+    --font-great-vibes: 'Great Vibes', cursive;
     
     /* Spacing */
     --section-padding: 5rem 0;
@@ -396,15 +397,21 @@ button {
 }
 
 .lotus-icon {
-    font-size: 3rem;
-    color: var(--primary-color);
     animation: float 3s ease-in-out infinite;
 }
 
+.lotus-svg-icon {
+    width: 7.875rem; /* Adjusted by 50% again */
+    height: auto;
+    fill: var(--primary-color); /* For SVG fill color */
+    display: block;
+    margin: 0 auto;
+}
+
 .hero-title {
-    font-family: var(--font-heading);
-    font-size: 3.5rem;
-    font-weight: 600;
+    font-family: var(--font-great-vibes);
+    font-size: 4.5rem; /* Increased font size for better visibility of the script font */
+    font-weight: normal; /* Great Vibes is a script font, so normal weight is appropriate */
     color: var(--text-dark);
     margin-bottom: 1rem;
     line-height: 1.2;
@@ -946,8 +953,8 @@ button {
 
 /* ===== ANIMATIONS ===== */
 @keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
 }
 
 @keyframes floatRandom {
