@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edenitude - Votre Chemin vers le Bien-être</title>
+    <meta name="description" content="Thérapies alternatives et préventives pour un bien-être holistique. Découvrez le massage thaï, l'aromathérapie et les soins de guérison.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-chakras">
+                    <div class="chakra chakra-1"></div>
+                    <div class="chakra chakra-2"></div>
+                    <div class="chakra chakra-3"></div>
+                    <div class="chakra chakra-4"></div>
+                </div>
+                <span class="logo-text">Edenitude</span>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link" data-translate="nav.home">Accueil</a>
+                <a href="#about" class="nav-link" data-translate="nav.about">À Propos</a>
+                <a href="#services" class="nav-link" data-translate="nav.services">Services</a>
+                <a href="#testimonials" class="nav-link" data-translate="nav.testimonials">Témoignages</a>
+                <a href="#contact" class="nav-link" data-translate="nav.contact">Contact</a>
+                <a href="#book" class="nav-link cta-nav" data-translate="nav.book">Réserver</a>
+                
+                <!-- Language Switcher -->
+                <div class="language-switcher">
+                    <button id="lang-toggle-btn" class="lang-btn" title="Switch to English">
+                        <span id="flag-emoji" class="flag-emoji">🇬🇧</span>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-decorative">
+                <div class="lotus-icon">
+                    <i class="fas fa-spa"></i>
+                </div>
+            </div>
+            
+            <h1 class="hero-title" data-translate="hero.title">Votre Chemin vers le Bien-être</h1>
+            <p class="hero-subtitle" data-translate="hero.subtitle">Thérapies Alternatives & Préventives</p>
+            <p class="hero-description" data-translate="hero.description">
+                Découvrez la sagesse ancestrale de la guérison holistique à travers nos services
+                thérapeutiques soigneusement sélectionnés, conçus pour restaurer l'équilibre, soulager les tensions et nourrir votre bien-être.
+            </p>
+            
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="scrollToSection('services')">
+                    <span data-translate="hero.btn_services">Explorez Nos Services</span>
+                    <i class="fas fa-arrow-down"></i>
+                </button>
+                <button class="btn btn-secondary" onclick="scrollToSection('contact')">
+                    <span data-translate="hero.btn_consultation">Réservez une Consultation</span>
+                    <i class="fas fa-calendar-alt"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div class="hero-visual">
+            <div class="floating-elements">
+                <div class="floating-element element-1"></div>
+                <div class="floating-element element-2"></div>
+                <div class="floating-element element-3"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-translate="about.title">À Propos d'Edenitude</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle" data-translate="about.subtitle">
+                    Un sanctuaire pour la guérison holistique et le bien-être spirituel
+                </p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <h3 data-translate="about.wisdom_title">Embrassant la Sagesse Ancestrale</h3>
+                    <p data-translate="about.description1">
+                        Chez Edenitude, nous croyons au pouvoir des pratiques de guérison ancestrales combinées
+                        aux approches modernes du bien-être. Notre mission est de vous guider dans un voyage
+                        transformateur vers une santé optimale et la paix intérieure.
+                    </p>
+                    <p data-translate="about.description2">
+                        Chaque séance de thérapie est soigneusement conçue pour traiter non seulement l'inconfort physique,
+                        mais aussi le bien-être émotionnel et spirituel, créant un équilibre harmonieux qui
+                        favorise un bien-être durable.
+                    </p>
+                    
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-heart"></i>
+                            <span data-translate="about.feature1">Soins Personnalisés</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-leaf"></i>
+                            <span data-translate="about.feature2">Guérison Naturelle</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-om"></i>
+                            <span data-translate="about.feature3">Équilibre Spirituel</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-visual">
+                    <div class="about-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-spa"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-translate="services.title">Nos Services de Guérison</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle" data-translate="services.subtitle">
+                    Traitements thérapeutiques conçus pour restaurer votre équilibre naturel
+                </p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up">
+                    <div class="service-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-hands"></i>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title" data-translate="services.thai.title">Massage Thaï</h3>
+                        <div class="service-price" data-translate="services.thai.price">À partir de 65€</div>
+                        <p class="service-description" data-translate="services.thai.description">
+                            Techniques douces pour soulager la douleur, améliorer la mobilité et restaurer
+                            l'équilibre naturel de votre corps.
+                        </p>
+                        <ul class="service-benefits">
+                            <li><i class="fas fa-check"></i> <span data-translate="services.thai.benefit1">Soulagement de la Douleur</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translate="services.thai.benefit2">Mobilité Améliorée</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translate="services.thai.benefit3">Rééquilibrage Corporel</span></li>
+                        </ul>
+                        <button class="btn btn-outline" data-translate="services.learn_more">En Savoir Plus</button>
+                    </div>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-tint"></i>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title" data-translate="services.aromatherapy.title">Massage Aromathérapie</h3>
+                        <div class="service-price" data-translate="services.aromatherapy.price">À partir de 70€</div>
+                        <p class="service-description" data-translate="services.aromatherapy.description">
+                            Thérapie manuelle puissante ciblant les tensions musculaires profondes et les
+                            restrictions fasciales pour une relaxation profonde.
+                        </p>
+                        <ul class="service-benefits">
+                            <li><i class="fas fa-check"></i> <span data-translate="services.aromatherapy.benefit1">Relaxation Profonde</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translate="services.aromatherapy.benefit2">Libération des Tensions</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translate="services.aromatherapy.benefit3">Travail Fascial</span></li>
+                        </ul>
+                        <button class="btn btn-outline" data-translate="services.learn_more">En Savoir Plus</button>
+                    </div>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title" data-translate="services.energy.title">Guérison Énergétique</h3>
+                        <div class="service-price" data-translate="services.energy.price">À partir de 55€</div>
+                        <p class="service-description" data-translate="services.energy.description">
+                            Équilibrage des chakras et alignement énergétique pour restaurer l'harmonie entre
+                            l'esprit, le corps et l'âme.
+                        </p>
+                        <ul class="service-benefits">
+                            <li><i class="fas fa-check"></i> <span data-translate="services.energy.benefit1">Équilibre Énergétique</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translate="services.energy.benefit2">Alignement des Chakras</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translate="services.energy.benefit3">Bien-être Spirituel</span></li>
+                        </ul>
+                        <button class="btn btn-outline" data-translate="services.learn_more">En Savoir Plus</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-translate="testimonials.title">Expériences Clients</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle" data-translate="testimonials.subtitle">
+                    Écoutez ceux qui ont trouvé leur chemin vers le bien-être
+                </p>
+            </div>
+            
+            <div class="testimonials-carousel">
+                <div class="testimonial active">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text" data-translate="testimonials.testimonial1.text">
+                            "Le massage thaï chez Edenitude a complètement transformé mon bien-être.
+                            Le toucher intuitif du thérapeute et les techniques ancestrales ont fait fondre
+                            des années de tension et de stress."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="author-info">
+                                <h4 data-translate="testimonials.testimonial1.author">Sarah M.</h4>
+                                <span data-translate="testimonials.testimonial1.role">Passionnée de Bien-être</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-nav">
+                    <button class="nav-dot active" onclick="showTestimonial(0)"></button>
+                    <button class="nav-dot" onclick="showTestimonial(1)"></button>
+                    <button class="nav-dot" onclick="showTestimonial(2)"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-translate="contact.title">Commencez Votre Voyage</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle" data-translate="contact.subtitle">
+                    Prêt à découvrir votre chemin vers le bien-être ? Contactez-nous dès aujourd'hui
+                </p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4 data-translate="contact.visit.title">Visitez Notre Sanctuaire</h4>
+                            <p data-translate="contact.visit.address">123 Avenue du Bien-être<br>Jardins Paisibles, CP 12345</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4 data-translate="contact.call.title">Appelez-nous</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4 data-translate="contact.email.title">Écrivez-nous</h4>
+                            <p>hello@edenitude.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4 data-translate="contact.hours.title">Horaires d'Ouverture</h4>
+                            <p data-translate="contact.hours.schedule">Lundi - Samedi : 9h00 - 20h00<br>Dimanche : 10h00 - 18h00</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name" data-translate="contact.form.name">Nom Complet</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" data-translate="contact.form.email">Adresse Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone" data-translate="contact.form.phone">Numéro de Téléphone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service" data-translate="contact.form.service">Service d'Intérêt</label>
+                            <select id="service" name="service" required>
+                                <option value="" data-translate="contact.form.select_service">Sélectionnez un service</option>
+                                <option value="thai-massage" data-translate="contact.form.option_thai">Massage Thaï</option>
+                                <option value="aromatherapy" data-translate="contact.form.option_aroma">Massage Aromathérapie</option>
+                                <option value="energy-healing" data-translate="contact.form.option_energy">Guérison Énergétique</option>
+                                <option value="consultation" data-translate="contact.form.option_consultation">Consultation Initiale</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" data-translate="contact.form.message">Message</label>
+                            <textarea id="message" name="message" rows="5" data-translate="contact.form.placeholder" placeholder="Parlez-nous de vos objectifs de bien-être ou de préoccupations spécifiques..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">
+                            <span data-translate="contact.form.submit">Envoyer le Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-chakras">
+                            <div class="chakra chakra-1"></div>
+                            <div class="chakra chakra-2"></div>
+                            <div class="chakra chakra-3"></div>
+                            <div class="chakra chakra-4"></div>
+                        </div>
+                        <span class="logo-text">Edenitude</span>
+                    </div>
+                    <p class="footer-description" data-translate="footer.description">
+                        Votre sanctuaire pour la guérison holistique et le bien-être spirituel.
+                        Découvrez le chemin vers la paix intérieure et une santé optimale.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-translate="footer.quick_links">Liens Rapides</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home" data-translate="footer.link_home">Accueil</a></li>
+                        <li><a href="#about" data-translate="footer.link_about">À Propos</a></li>
+                        <li><a href="#services" data-translate="footer.link_services">Services</a></li>
+                        <li><a href="#testimonials" data-translate="footer.link_testimonials">Témoignages</a></li>
+                        <li><a href="#contact" data-translate="footer.link_contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-translate="footer.services_title">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" data-translate="footer.service_thai">Massage Thaï</a></li>
+                        <li><a href="#" data-translate="footer.service_aroma">Aromathérapie</a></li>
+                        <li><a href="#" data-translate="footer.service_energy">Guérison Énergétique</a></li>
+                        <li><a href="#" data-translate="footer.service_consultation">Consultations</a></li>
+                        <li><a href="#" data-translate="footer.service_programs">Programmes de Bien-être</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-translate="footer.contact_info">Informations de Contact</h4>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-map-marker-alt"></i> <span data-translate="footer.address">123 Avenue du Bien-être, Jardins Paisibles</span></p>
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> hello@edenitude.com</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p data-translate="footer.copyright">&copy; 2024 Edenitude. Tous droits réservés. | <a href="#" data-translate="footer.privacy">Politique de Confidentialité</a> | <a href="#" data-translate="footer.terms">Conditions d'Utilisation</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" onclick="scrollToTop()">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
