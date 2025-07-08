@@ -29,24 +29,61 @@ const translations = {
         // Services Section
         'services.title': 'Nos Services de Guérison',
         'services.subtitle': 'Traitements thérapeutiques conçus pour restaurer votre équilibre naturel',
-        'services.thai.title': 'Massage Thaï',
-        'services.thai.price': 'À partir de 65€',
-        'services.thai.description': 'Techniques douces pour soulager la douleur, améliorer la mobilité et restaurer l\'équilibre naturel de votre corps.',
-        'services.thai.benefit1': 'Soulagement de la Douleur',
-        'services.thai.benefit2': 'Mobilité Améliorée',
-        'services.thai.benefit3': 'Rééquilibrage Corporel',
-        'services.aromatherapy.title': 'Massage Aromathérapie',
-        'services.aromatherapy.price': 'À partir de 70€',
-        'services.aromatherapy.description': 'Thérapie manuelle puissante ciblant les tensions musculaires profondes et les restrictions fasciales pour une relaxation profonde.',
-        'services.aromatherapy.benefit1': 'Relaxation Profonde',
-        'services.aromatherapy.benefit2': 'Libération des Tensions',
-        'services.aromatherapy.benefit3': 'Travail Fascial',
-        'services.energy.title': 'Guérison Énergétique',
-        'services.energy.price': 'À partir de 55€',
-        'services.energy.description': 'Équilibrage des chakras et alignement énergétique pour restaurer l\'harmonie entre l\'esprit, le corps et l\'âme.',
-        'services.energy.benefit1': 'Équilibre Énergétique',
-        'services.energy.benefit2': 'Alignement des Chakras',
-        'services.energy.benefit3': 'Bien-être Spirituel',
+        'services.thai.title': 'Thaï massage',
+        'services.thai.price': 'À partir de €65',
+        'services.thai.description': 'Des techniques douces pour soulager vos douleurs, améliorer votre mobilité et restaurer l\'équilibre de votre corps.',
+        'services.thai.benefit1': 'Soulagement des douleurs',
+        'services.thai.benefit2': 'Amélioration de la mobilité',
+        'services.thai.benefit3': 'Rééquilibrage corporel',
+
+        'services.huiles.title': 'Massages aux huiles',
+        'services.huiles.price': 'À partir de €70',
+        'services.huiles.description': 'Thérapie manuelle puissante et précise visant à libérer les capacités du corps. Travail profond des muscles et des fascias.',
+        'services.huiles.benefit1': 'Relaxation profonde',
+        'services.huiles.benefit2': 'Libération des tensions',
+        'services.huiles.benefit3': 'Travail des fascias',
+
+        'services.energetiques.title': 'Soins énergétiques',
+        'services.energetiques.price': 'À partir de €75',
+        'services.energetiques.description': 'Harmonisez vos énergies vitales pour retrouver un bien-être global, réduire le stress et stimuler votre pouvoir d\'autoguérison.',
+        'services.energetiques.benefit1': 'Réduction du stress',
+        'services.energetiques.benefit2': 'Harmonisation énergétique',
+        'services.energetiques.benefit3': 'Stimulation autoguérison',
+
+        'services.pieds.title': 'Massage des pieds',
+        'services.pieds.price': 'À partir de €60',
+        'services.pieds.description': 'Libération subtile et profonde des pieds et des jambes ainsi que des organes qui lui sont interconnectés.',
+        'services.pieds.benefit1': 'Amélioration circulation',
+        'services.pieds.benefit2': 'Détente profonde',
+        'services.pieds.benefit3': 'Connexion énergétique',
+
+        'services.toksen.title': 'Tok Sen',
+        'services.toksen.price': 'À partir de €80',
+        'services.toksen.description': 'Technique ancestrale Lanna. La vibration profonde et rythmique dans le corps libère muscles, articulations et fascias. Recrée de l\'espace et de la circulation énergétique.',
+        'services.toksen.benefit1': 'Libération musculaire',
+        'services.toksen.benefit2': 'Amélioration mobilité',
+        'services.toksen.benefit3': 'Circulation énergétique',
+
+        'services.hotherbals.title': 'Hot herbals',
+        'services.hotherbals.price': 'À partir de €85',
+        'services.hotherbals.description': 'Travail profond des sen lines pour rééquilibrer les flux énergétiques, sanguins et lymphatiques. Libère les blocages physiques et redonne au corps son amplitude de mouvement.',
+        'services.hotherbals.benefit1': 'Rééquilibrage énergétique',
+        'services.hotherbals.benefit2': 'Amélioration circulation',
+        'services.hotherbals.benefit3': 'Libération blocages',
+
+        'services.amatarot.title': 'Amatarot',
+        'services.amatarot.price': 'À partir de €90',
+        'services.amatarot.description': 'Technique ancestrale issue des médecines traditionnelles qui agit en profondeur sur les tendons, les muscles, les fascias et les nerfs. Régénération et libération des tissus.',
+        'services.amatarot.benefit1': 'Régénération tissulaire',
+        'services.amatarot.benefit2': 'Travail profond',
+        'services.amatarot.benefit3': 'Libération nerveuse',
+
+        'services.abdominal.title': 'Massage Abdominal',
+        'services.abdominal.price': 'À partir de €95',
+        'services.abdominal.description': 'Massage profond, détoxifiant et énergisant. Équilibre l\'ensemble du système corporel et émotionnel.',
+        'services.abdominal.benefit1': 'Détoxification',
+        'services.abdominal.benefit2': 'Équilibre émotionnel',
+        'services.abdominal.benefit3': 'Régénération système digestif',
         'services.learn_more': 'En Savoir Plus',
         
         // Testimonials Section
@@ -129,22 +166,59 @@ const translations = {
         'services.subtitle': 'Therapeutic treatments designed to restore your natural balance',
         'services.thai.title': 'Thai Massage',
         'services.thai.price': 'From €65',
-        'services.thai.description': 'Gentle techniques to relieve pain, improve mobility, and restore your body\'s natural equilibrium.',
+        'services.thai.description': 'Gentle techniques to relieve pain, improve mobility, and restore your body\'s balance.',
         'services.thai.benefit1': 'Pain Relief',
         'services.thai.benefit2': 'Improved Mobility',
         'services.thai.benefit3': 'Body Rebalancing',
-        'services.aromatherapy.title': 'Aromatherapy Massage',
-        'services.aromatherapy.price': 'From €70',
-        'services.aromatherapy.description': 'Powerful manual therapy targeting deep muscle tension and fascial restrictions for profound relaxation.',
-        'services.aromatherapy.benefit1': 'Deep Relaxation',
-        'services.aromatherapy.benefit2': 'Tension Release',
-        'services.aromatherapy.benefit3': 'Fascial Work',
-        'services.energy.title': 'Energy Healing',
-        'services.energy.price': 'From €55',
-        'services.energy.description': 'Chakra balancing and energy alignment to restore harmony between mind, body, and spirit.',
-        'services.energy.benefit1': 'Energy Balance',
-        'services.energy.benefit2': 'Chakra Alignment',
-        'services.energy.benefit3': 'Spiritual Wellness',
+
+        'services.huiles.title': 'Oil Massages',
+        'services.huiles.price': 'From €70',
+        'services.huiles.description': 'Powerful and precise manual therapy aimed at unleashing the body\'s capabilities. Deep work on muscles and fascia.',
+        'services.huiles.benefit1': 'Deep Relaxation',
+        'services.huiles.benefit2': 'Tension Release',
+        'services.huiles.benefit3': 'Fascial Work',
+
+        'services.energetiques.title': 'Energy Healing',
+        'services.energetiques.price': 'From €75',
+        'services.energetiques.description': 'Harmonize your vital energies to regain overall well-being, reduce stress, and stimulate your self-healing power.',
+        'services.energetiques.benefit1': 'Stress Reduction',
+        'services.energetiques.benefit2': 'Energy Harmonization',
+        'services.energetiques.benefit3': 'Self-healing Stimulation',
+
+        'services.pieds.title': 'Foot Massage',
+        'services.pieds.price': 'From €60',
+        'services.pieds.description': 'Subtle and deep release of the feet and legs, as well as their interconnected organs.',
+        'services.pieds.benefit1': 'Improved Circulation',
+        'services.pieds.benefit2': 'Deep Relaxation',
+        'services.pieds.benefit3': 'Energy Connection',
+
+        'services.toksen.title': 'Tok Sen',
+        'services.toksen.price': 'From €80',
+        'services.toksen.description': 'Ancient Lanna technique. Deep and rhythmic vibration in the body releases muscles, joints, and fascia. Creates space and energetic circulation.',
+        'services.toksen.benefit1': 'Muscle Release',
+        'services.toksen.benefit2': 'Improved Mobility',
+        'services.toksen.benefit3': 'Energy Circulation',
+
+        'services.hotherbals.title': 'Hot Herbals',
+        'services.hotherbals.price': 'From €85',
+        'services.hotherbals.description': 'Deep work on the sen lines to rebalance energetic, blood, and lymphatic flows. Releases physical blockages and restores the body\'s range of motion.',
+        'services.hotherbals.benefit1': 'Energy Rebalancing',
+        'services.hotherbals.benefit2': 'Improved Circulation',
+        'services.hotherbals.benefit3': 'Blockage Release',
+
+        'services.amatarot.title': 'Amatarot',
+        'services.amatarot.price': 'From €90',
+        'services.amatarot.description': 'Ancient technique from traditional medicines that acts deeply on tendons, muscles, fascia, and nerves. Tissue regeneration and nerve release.',
+        'services.amatarot.benefit1': 'Tissue Regeneration',
+        'services.amatarot.benefit2': 'Deep Work',
+        'services.amatarot.benefit3': 'Nerve Release',
+
+        'services.abdominal.title': 'Abdominal Massage',
+        'services.abdominal.price': 'From €95',
+        'services.abdominal.description': 'Deep, detoxifying, and energizing massage. Balances the entire bodily and emotional system.',
+        'services.abdominal.benefit1': 'Detoxification',
+        'services.abdominal.benefit2': 'Emotional Balance',
+        'services.abdominal.benefit3': 'Digestive System Regeneration',
         'services.learn_more': 'Learn More',
         
         // Testimonials Section
@@ -878,77 +952,3 @@ window.addEventListener('scroll', throttle(function() {
 }, 16));
 
 // ===== ACCESSIBILITY ENHANCEMENTS =====
-document.addEventListener('DOMContentLoaded', function() {
-    // Add keyboard navigation support
-    document.addEventListener('keydown', function(e) {
-        // ESC key closes mobile menu
-        if (e.key === 'Escape') {
-            const navMenu = document.getElementById('nav-menu');
-            const navToggle = document.getElementById('nav-toggle');
-            navMenu.classList.remove('active');
-            navToggle.classList.remove('active');
-        }
-        
-        // Enter/Space activates buttons and links
-        if (e.key === 'Enter' || e.key === ' ') {
-            const target = e.target;
-            if (target.classList.contains('btn') || target.classList.contains('nav-dot')) {
-                e.preventDefault();
-                target.click();
-            }
-        }
-    });
-    
-    // Add focus indicators for better accessibility
-    const focusableElements = document.querySelectorAll('a, button, input, select, textarea');
-    focusableElements.forEach(element => {
-        element.addEventListener('focus', function() {
-            this.classList.add('focused');
-        });
-        
-        element.addEventListener('blur', function() {
-            this.classList.remove('focused');
-        });
-    });
-});
-
-// ===== PERFORMANCE OPTIMIZATIONS =====
-
-// Lazy load images when they come into view
-document.addEventListener('DOMContentLoaded', function() {
-    const imageObserver = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const img = entry.target;
-                img.src = img.dataset.src;
-                img.classList.remove('lazy');
-                observer.unobserve(img);
-            }
-        });
-    });
-    
-    const lazyImages = document.querySelectorAll('img[data-src]');
-    lazyImages.forEach(img => {
-        imageObserver.observe(img);
-    });
-});
-
-// Preload critical assets
-function preloadCriticalAssets() {
-    const criticalAssets = [
-        'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap'
-    ];
-    
-    criticalAssets.forEach(asset => {
-        const link = document.createElement('link');
-        link.rel = 'preload';
-        link.as = 'style';
-        link.href = asset;
-        document.head.appendChild(link);
-    });
-}
-
-// Initialize performance optimizations
-document.addEventListener('DOMContentLoaded', preloadCriticalAssets);
-
-console.log('🌸 Edenitude wellness website loaded successfully!');
