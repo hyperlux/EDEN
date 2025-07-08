@@ -11,6 +11,7 @@
     --cream: #FDF9F0;
     --gray-light: #F8F8F8;
     --gray-medium: #E0E0E0;
+    --orange-yellow: #FFA500;
     
     /* Chakra Colors */
     --chakra-purple: #9932CC;
@@ -91,6 +92,11 @@ button {
 .section-header {
     text-align: center;
     margin-bottom: 4rem;
+}
+
+/* Reduced margin for testimonials section specifically */
+.testimonials .section-header {
+    margin-bottom: 2rem;
 }
 
 .section-title {
@@ -199,29 +205,10 @@ button {
     gap: 0.75rem;
 }
 
-.logo-chakras {
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-}
-
-.chakra {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    border: 2px solid var(--white);
-}
-
-.chakra-1 { background: var(--chakra-purple); }
-.chakra-2 { background: var(--chakra-green); }
-.chakra-3 { background: var(--chakra-yellow); }
-.chakra-4 { background: var(--chakra-red); }
-
-.logo-text {
-    font-family: var(--font-heading);
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: var(--text-dark);
+.nav-logo-img {
+    height: 50px; /* Adjust as needed */
+    width: auto;
+    object-fit: contain;
 }
 
 .nav-menu {
@@ -640,23 +627,37 @@ button {
 
 /* ===== TESTIMONIALS SECTION ===== */
 .testimonials {
-    padding: var(--section-padding);
+    padding: 3rem 0 2rem 0; /* Reduced padding to minimize spacing */
     background: var(--white);
+    contain: layout style; /* Prevent layout shifts from affecting other elements */
 }
 
 .testimonials-carousel {
     max-width: 800px;
+    width: 100%;
+    height: 400px; /* Fixed height to prevent layout shifts */
     margin: 0 auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Prevent content spillover */
 }
 
 .testimonial {
     display: none;
     text-align: center;
     padding: 2rem;
+    width: 100%;
+    height: 100%; /* Fill the fixed container height */
+    box-sizing: border-box;
+    overflow-y: auto; /* Allow scrolling for long content */
+    flex-direction: column;
+    justify-content: center;
 }
 
 .testimonial.active {
-    display: block;
+    display: flex; /* Show as flex for proper centering */
     animation: fadeIn 0.5s ease-in-out;
 }
 
@@ -673,8 +674,30 @@ button {
     line-height: 1.8;
     margin-bottom: 2rem;
     max-width: 600px;
+    max-height: 200px; /* Limit text height to prevent layout shifts */
     margin-left: auto;
     margin-right: auto;
+    overflow-y: auto; /* Allow scrolling for very long reviews */
+    padding-right: 0.5rem; /* Space for scrollbar if needed */
+}
+
+/* Custom scrollbar styling for testimonial text */
+.testimonial-text::-webkit-scrollbar {
+    width: 4px;
+}
+
+.testimonial-text::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.testimonial-text::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 2px;
+    opacity: 0.3;
+}
+
+.testimonial-text::-webkit-scrollbar-thumb:hover {
+    opacity: 0.5;
 }
 
 .testimonial-author {
@@ -708,23 +731,66 @@ button {
 }
 
 .testimonial-nav {
-    display: flex;
-    justify-content: center;
-    gap: 0.5rem;
-    margin-top: 2rem;
+    display: none; /* Hide the navigation dots */
 }
 
-.nav-dot {
-    width: 12px;
-    height: 12px;
+.carousel-arrow {
+    background: rgba(255, 255, 255, 0.9);
+    border: 2px solid var(--primary-color);
     border-radius: 50%;
-    background: var(--gray-medium);
-    transition: var(--transition);
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    color: var(--primary-color);
     cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    box-shadow: var(--shadow-light);
 }
 
-.nav-dot.active {
+.carousel-arrow:hover {
     background: var(--primary-color);
+    color: var(--white);
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: var(--shadow-medium);
+}
+
+.prev-arrow {
+    left: 1rem; /* More visible positioning */
+}
+
+.next-arrow {
+    right: 1rem; /* More visible positioning */
+}
+
+/* Responsive adjustments for arrows and testimonials */
+@media (max-width: 768px) {
+    .testimonials {
+        padding: 2rem 0 1.5rem 0; /* Further reduced padding on mobile */
+    }
+    
+    .testimonials-carousel {
+        height: 350px; /* Slightly smaller fixed height on mobile */
+    }
+    
+    .testimonial-text {
+        font-size: 1.1rem; /* Slightly smaller text on mobile */
+        max-height: 180px; /* Adjust max height for mobile */
+    }
+    
+    .prev-arrow {
+        left: 0.5rem;
+    }
+
+    .next-arrow {
+        right: 0.5rem;
+    }
 }
 
 /* ===== CONTACT SECTION ===== */
@@ -821,7 +887,7 @@ button {
 
 /* ===== FOOTER ===== */
 .footer {
-    background: var(--text-dark);
+    background: var(--secondary-color);
     color: var(--white);
     padding: 3rem 0 1rem;
 }
@@ -833,15 +899,15 @@ button {
     margin-bottom: 2rem;
 }
 
-.footer-logo {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
+.footer-logo-img {
+    height: 60px; /* Adjust as needed */
+    width: auto;
+    object-fit: contain;
     margin-bottom: 1rem;
 }
 
 .footer-description {
-    color: #cccccc;
+    color: var(--white);
     margin-bottom: 1.5rem;
     line-height: 1.6;
 }
@@ -854,12 +920,12 @@ button {
 .social-link {
     width: 40px;
     height: 40px;
-    background: rgba(212, 165, 116, 0.2);
+    background: rgba(255, 255, 255, 0.2);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--primary-color);
+    color: var(--orange-yellow);
     transition: var(--transition);
 }
 
@@ -880,37 +946,39 @@ button {
 }
 
 .footer-links a {
-    color: #cccccc;
+    color: var(--white);
     transition: var(--transition);
 }
 
 .footer-links a:hover {
-    color: var(--primary-color);
+    color: var(--orange-yellow);
 }
 
-.footer-contact p {
+.footer-contact p,
+.footer-contact a {
+    color: var(--white);
     display: flex;
     align-items: center;
     gap: 0.5rem;
     margin-bottom: 0.5rem;
-    color: #cccccc;
+    color: var(--white);
 }
 
 .footer-contact i {
-    color: var(--primary-color);
+    color: var(--orange-yellow);
     width: 16px;
 }
 
 .footer-bottom {
-    border-top: 1px solid #444;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
     padding-top: 1rem;
     text-align: center;
-    color: #cccccc;
+    color: var(--white);
     font-size: 0.9rem;
 }
 
 .footer-bottom a {
-    color: var(--primary-color);
+    color: var(--orange-yellow);
     transition: var(--transition);
 }
 

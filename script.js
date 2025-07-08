@@ -92,6 +92,7 @@ const translations = {
         'testimonials.testimonial1.text': 'Le massage thaï chez Edenitude a complètement transformé mon bien-être. Le toucher intuitif du thérapeute et les techniques ancestrales ont fait fondre des années de tension et de stress.',
         'testimonials.testimonial1.author': 'Sarah M.',
         'testimonials.testimonial1.role': 'Passionnée de Bien-être',
+        'testimonials.testimonial_author_role': 'Client',
         
         // Contact Section
         'contact.title': 'Commencez Votre Voyage',
@@ -131,7 +132,7 @@ const translations = {
         'footer.service_programs': 'Programmes de Bien-être',
         'footer.contact_info': 'Informations de Contact',
         'footer.address': '123 Avenue du Bien-être, Jardins Paisibles',
-        'footer.copyright': '&copy; 2024 Edenitude. Tous droits réservés. | <a href="#" data-translate="footer.privacy">Politique de Confidentialité</a> | <a href="#" data-translate="footer.terms">Conditions d\'Utilisation</a>',
+        'footer.copyright': '&copy; 2024 Edenitude. Tous droits réservés.',
         'footer.privacy': 'Politique de Confidentialité',
         'footer.terms': 'Conditions d\'Utilisation'
     },
@@ -227,6 +228,7 @@ const translations = {
         'testimonials.testimonial1.text': 'The Thai massage at Edenitude completely transformed my well-being. The therapist\'s intuitive touch and ancient techniques melted away years of tension and stress.',
         'testimonials.testimonial1.author': 'Sarah M.',
         'testimonials.testimonial1.role': 'Wellness Enthusiast',
+        'testimonials.testimonial_author_role': 'Client',
         
         // Contact Section
         'contact.title': 'Begin Your Journey',
@@ -266,7 +268,7 @@ const translations = {
         'footer.service_programs': 'Wellness Programs',
         'footer.contact_info': 'Contact Info',
         'footer.address': '123 Wellness Avenue, Peaceful Gardens',
-        'footer.copyright': '&copy; 2024 Edenitude. All rights reserved. | <a href="#" data-translate="footer.privacy">Privacy Policy</a> | <a href="#" data-translate="footer.terms">Terms of Service</a>',
+        'footer.copyright': '&copy; 2024 Edenitude. All rights reserved.',
         'footer.privacy': 'Privacy Policy',
         'footer.terms': 'Terms of Service'
     }
@@ -346,11 +348,18 @@ document.addEventListener('DOMContentLoaded', function() {
     window.scrollToSection = function(sectionId) {
         const section = document.getElementById(sectionId);
         if (section) {
-            const navHeight = navbar.offsetHeight;
-            const sectionTop = section.offsetTop - navHeight - 20;
+            const navHeight = navbar.offsetHeight || 80; // Fallback if navbar not found
+            let offset = 20; // Default offset
+            
+            // Special handling for testimonials section to ensure proper positioning
+            if (sectionId === 'testimonials') {
+                offset = 30; // Slightly more offset for testimonials
+            }
+            
+            const sectionTop = section.offsetTop - navHeight - offset;
             
             window.scrollTo({
-                top: sectionTop,
+                top: Math.max(0, sectionTop), // Ensure we don't scroll to negative position
                 behavior: 'smooth'
             });
         }
@@ -379,36 +388,106 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // ===== TESTIMONIALS CAROUSEL =====
 let currentTestimonial = 0;
-const testimonials = [
-    {
-        text: "The Thai massage at Edenitude completely transformed my well-being. The therapist's intuitive touch and ancient techniques melted away years of tension and stress.",
-        author: "Sarah M.",
-        role: "Wellness Enthusiast"
-    },
-    {
-        text: "After just one aromatherapy session, I felt renewed and balanced. The healing oils and expert massage technique created an unforgettable experience of deep relaxation.",
-        author: "Michael R.",
-        role: "Yoga Instructor"
-    },
-    {
-        text: "The energy healing session was profound. I could feel the chakra alignment working through my entire being, bringing peace and clarity I hadn't experienced in years.",
-        author: "Emma L.",
-        role: "Meditation Teacher"
+let allTestimonials = []; // This will store the reviews from the JSON
+let allTestimonialsEnglish = []; // This will store the English reviews from the JSON
+
+document.addEventListener('DOMContentLoaded', function() {
+    // ... existing code ...
+
+    // Load testimonials
+    loadTestimonials();
+});
+
+async function loadTestimonials() {
+    try {
+        const responseFrench = await fetch('reviews.json');
+        const dataFrench = await responseFrench.json();
+        allTestimonials = dataFrench; // reviews.json directly contains the array of reviews
+
+        const responseEnglish = await fetch('reviews_english.json');
+        const dataEnglish = await responseEnglish.json();
+        allTestimonialsEnglish = dataEnglish; // reviews_english.json directly contains the array of reviews
+
+        renderTestimonials();
+        // Start auto-rotation only after testimonials are loaded
+        setInterval(autoRotateTestimonials, 5000);
+    } catch (error) {
+        console.error('Error loading testimonials:', error);
     }
-];
+}
+
+function renderTestimonialStars(rating) {
+    let starsHtml = '';
+    for (let i = 0; i < 5; i++) {
+        if (i < rating) {
+            starsHtml += '<i class="fas fa-star"></i>';
+        } else {
+            starsHtml += '<i class="far fa-star"></i>'; // Use far for empty stars if needed, or just omit
+        }
+    }
+    return starsHtml;
+}
+
+function renderTestimonials() {
+    const testimonialsContainer = document.querySelector('.testimonials-carousel .testimonials-container');
+    const prevArrow = document.querySelector('.testimonials-carousel .prev-arrow');
+    const nextArrow = document.querySelector('.testimonials-carousel .next-arrow');
+    
+    testimonialsContainer.innerHTML = '';
+
+    allTestimonials.forEach((review, index) => {
+        // Determine the review text based on the current language
+        const reviewText = currentLanguage === 'fr' ? review.review : allTestimonialsEnglish[index].review;
+
+        // Create testimonial element
+        const testimonialDiv = document.createElement('div');
+        testimonialDiv.classList.add('testimonial');
+        if (index === 0) {
+            testimonialDiv.classList.add('active');
+        }
+
+        testimonialDiv.innerHTML = `
+            <div class="testimonial-content">
+                <div class="stars">
+                    ${renderTestimonialStars(review.rating)}
+                </div>
+                <p class="testimonial-text">"${reviewText}"</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="author-info">
+                        <h4>${review.reviewer}</h4>
+                        <span>${review.date}</span>
+                    </div>
+                </div>
+            </div>
+        `;
+        testimonialsContainer.appendChild(testimonialDiv);
+    });
+
+    // Add event listeners for arrows
+    if (prevArrow && nextArrow) {
+        prevArrow.addEventListener('click', () => showTestimonial(currentTestimonial - 1));
+        nextArrow.addEventListener('click', () => showTestimonial(currentTestimonial + 1));
+    }
+
+    // Initialize the first testimonial
+    showTestimonial(0);
+}
 
 function showTestimonial(index) {
-    const testimonialElements = document.querySelectorAll('.testimonial');
-    const navDots = document.querySelectorAll('.nav-dot');
-    
+    const testimonialElements = document.querySelectorAll('.testimonials-carousel .testimonial');
+    // Ensure index is within bounds
+    if (index < 0) {
+        index = testimonialElements.length - 1; // Loop to the last testimonial
+    } else if (index >= testimonialElements.length) {
+        index = 0; // Loop to the first testimonial
+    }
+
     // Hide all testimonials
     testimonialElements.forEach(testimonial => {
         testimonial.classList.remove('active');
-    });
-    
-    // Remove active state from all nav dots
-    navDots.forEach(dot => {
-        dot.classList.remove('active');
     });
     
     // Show selected testimonial
@@ -416,22 +495,13 @@ function showTestimonial(index) {
         testimonialElements[index].classList.add('active');
     }
     
-    // Update nav dot
-    if (navDots[index]) {
-        navDots[index].classList.add('active');
-    }
-    
     currentTestimonial = index;
 }
 
 // Auto-rotate testimonials
 function autoRotateTestimonials() {
-    currentTestimonial = (currentTestimonial + 1) % testimonials.length;
-    showTestimonial(currentTestimonial);
+    showTestimonial(currentTestimonial + 1);
 }
-
-// Start auto-rotation
-setInterval(autoRotateTestimonials, 5000);
 
 // ===== FORM HANDLING =====
 document.addEventListener('DOMContentLoaded', function() {
@@ -853,43 +923,9 @@ function updatePageMeta() {
 }
 
 function updateTestimonialsContent() {
-    // Update the testimonials array with translated content
-    if (currentLanguage === 'fr') {
-        testimonials[0] = {
-            text: "Le massage thaï chez Edenitude a complètement transformé mon bien-être. Le toucher intuitif du thérapeute et les techniques ancestrales ont fait fondre des années de tension et de stress.",
-            author: "Sarah M.",
-            role: "Passionnée de Bien-être"
-        };
-        testimonials[1] = {
-            text: "Après une seule séance d'aromathérapie, je me suis sentie renouvelée et équilibrée. Les huiles cicatrisantes et la technique de massage experte ont créé une expérience inoubliable de relaxation profonde.",
-            author: "Michael R.",
-            role: "Instructeur de Yoga"
-        };
-        testimonials[2] = {
-            text: "La séance de guérison énergétique était profonde. Je pouvais sentir l'alignement des chakras agir dans tout mon être, apportant une paix et une clarté que je n'avais pas ressenties depuis des années.",
-            author: "Emma L.",
-            role: "Professeure de Méditation"
-        };
-    } else {
-        testimonials[0] = {
-            text: "The Thai massage at Edenitude completely transformed my well-being. The therapist's intuitive touch and ancient techniques melted away years of tension and stress.",
-            author: "Sarah M.",
-            role: "Wellness Enthusiast"
-        };
-        testimonials[1] = {
-            text: "After just one aromatherapy session, I felt renewed and balanced. The healing oils and expert massage technique created an unforgettable experience of deep relaxation.",
-            author: "Michael R.",
-            role: "Yoga Instructor"
-        };
-        testimonials[2] = {
-            text: "The energy healing session was profound. I could feel the chakra alignment working through my entire being, bringing peace and clarity I hadn't experienced in years.",
-            author: "Emma L.",
-            role: "Meditation Teacher"
-        };
-    }
-    
-    // Refresh current testimonial display
-    showTestimonial(currentTestimonial);
+    // This function is now responsible for re-rendering the dynamically loaded testimonials
+    // when the language changes.
+    renderTestimonials();
 }
 
 // Initialize language preference from localStorage
