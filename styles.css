@@ -377,10 +377,9 @@ button {
     animation: float 3s ease-in-out infinite;
 }
 
-.lotus-svg-icon {
-    width: 7.875rem; /* Adjusted by 50% again */
+.hero-logo-img {
+    width: 25rem; /* 50% of original 7.875rem */
     height: auto;
-    fill: var(--primary-color); /* For SVG fill color */
     display: block;
     margin: 0 auto;
 }
@@ -725,6 +724,55 @@ button {
 .service-benefits i {
     color: var(--primary-color);
     font-size: 0.8rem;
+}
+
+/* Pricing Card Specific Styles */
+.pricing-card {
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.pricing-card .service-title {
+    color: var(--white);
+    margin-bottom: 1.5rem;
+}
+
+.pricing-details {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 1rem;
+}
+
+.pricing-details h4 {
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.8rem;
+    color: var(--white);
+}
+
+.pricing-details ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+.pricing-details li {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: var(--white);
+}
+
+.pricing-note {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: 1rem;
 }
 
 /* ===== TESTIMONIALS SECTION ===== */
