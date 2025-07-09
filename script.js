@@ -4,6 +4,7 @@ const translations = {
         // Navigation
         'nav.home': 'Accueil',
         'nav.about': 'À Propos',
+        'nav.team': 'Qui sommes-nous',
         'nav.services': 'Services',
         'nav.testimonials': 'Témoignages',
         'nav.contact': 'Contact',
@@ -25,6 +26,17 @@ const translations = {
         'about.feature1': 'Soins Personnalisés',
         'about.feature2': 'Guérison Naturelle',
         'about.feature3': 'Équilibre Spirituel',
+        
+        // Team Section
+        'team.title': 'Qui sommes-nous ?',
+        'team.subtitle': 'Rencontrez nos thérapeutes passionnées',
+        'team.chloe.name': 'Chloé',
+        'team.chloe.description': 'Forte de 20 ans d\'expérience en tant que thérapeute et de plus de 20 ans de formation en médecines traditionnelles et alternatives du corps, je mets à votre disposition mon savoir-faire et ma passion pour comprendre vos besoins et vous offrir une séance de détente et de relaxation unique.',
+        'team.michele.name': 'Michèle',
+        'team.michele.description': 'Thérapeute en énergétique depuis plus de 10 ans, spécialisée dans les mémoires transgénérationnelles.',
+        'team.philosophy.text1': 'Nous vous offrons une parenthèse pour écouter votre corps et votre cœur, une pause pour vous reconnecter à vous-même.',
+        'team.philosophy.text2': 'L\'équipe d\'Edenitude, puisant dans les meilleures connaissances des médecines traditionnelles, complémentaires et intégratives, vous propose une approche alternative, holistique et préventive de votre santé.',
+        'team.philosophy.text3': 'Chaque séance est personnalisée selon vos besoins du moment, un instant unique, ici et maintenant, au rythme de votre respiration et de votre corps.',
         
         // Services Section
         'services.title': 'Nos Services de Guérison',
@@ -121,6 +133,7 @@ const translations = {
         'footer.quick_links': 'Liens Rapides',
         'footer.link_home': 'Accueil',
         'footer.link_about': 'À Propos',
+        'footer.link_team': 'Qui sommes-nous',
         'footer.link_services': 'Services',
         'footer.link_testimonials': 'Témoignages',
         'footer.link_contact': 'Contact',
@@ -140,6 +153,7 @@ const translations = {
         // Navigation
         'nav.home': 'Home',
         'nav.about': 'About',
+        'nav.team': 'Who we are',
         'nav.services': 'Services',
         'nav.testimonials': 'Testimonials',
         'nav.contact': 'Contact',
@@ -161,7 +175,18 @@ const translations = {
         'about.feature1': 'Personalized Care',
         'about.feature2': 'Natural Healing',
         'about.feature3': 'Spiritual Balance',
-        
+
+        // Team Section
+        'team.title': 'Who we are?',
+        'team.subtitle': 'Meet our passionate therapists',
+        'team.chloe.name': 'Chloé',
+        'team.chloe.description': 'With 20 years of experience as a therapist and over 20 years of training in traditional and alternative body medicine, I put my expertise and passion at your disposal to understand your needs and offer you a unique session of relaxation and well-being.',
+        'team.michele.name': 'Michèle',
+        'team.michele.description': 'Energy therapist for over 10 years, specialized in transgenerational memories.',
+        'team.philosophy.text1': 'We offer you a pause to listen to your body and your heart, a break to reconnect with yourself.',
+        'team.philosophy.text2': 'The Edenitude team, drawing from the best knowledge of traditional, complementary and integrative medicines, offers you an alternative, holistic and preventive approach to your health.',
+        'team.philosophy.text3': 'Each session is personalized according to your needs of the moment, a unique moment, here and now, at the rhythm of your breathing and your body.',
+
         // Services Section
         'services.title': 'Our Healing Services',
         'services.subtitle': 'Therapeutic treatments designed to restore your natural balance',
@@ -257,6 +282,7 @@ const translations = {
         'footer.quick_links': 'Quick Links',
         'footer.link_home': 'Home',
         'footer.link_about': 'About Us',
+        'footer.link_team': 'Who we are',
         'footer.link_services': 'Services',
         'footer.link_testimonials': 'Testimonials',
         'footer.link_contact': 'Contact',
