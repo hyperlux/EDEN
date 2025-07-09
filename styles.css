@@ -1339,12 +1339,15 @@ button {
 
 /* Focus styles for accessibility */
 .btn:focus,
-.nav-link:focus,
 input:focus,
 select:focus,
 textarea:focus {
     outline: 2px solid var(--primary-color);
     outline-offset: 2px;
+}
+
+.nav-link:focus {
+    outline: none;
 }
 
 /* High contrast mode support */
