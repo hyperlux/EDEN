@@ -374,20 +374,20 @@ document.addEventListener('DOMContentLoaded', function() {
     window.scrollToSection = function(sectionId) {
         const section = document.getElementById(sectionId);
         if (section) {
-            const navHeight = navbar.offsetHeight || 80; // Fallback if navbar not found
-            let offset = 20; // Default offset
-            
-            // Special handling for testimonials section to ensure proper positioning
+            // Special handling for testimonials section which has min-height: 100vh
             if (sectionId === 'testimonials') {
-                offset = 30; // Slightly more offset for testimonials
+                // For testimonials, scroll to center since content is vertically centered
+                section.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'center'
+                });
+            } else {
+                // For other sections, use normal top scrolling with scroll-padding-top
+                section.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
             }
-            
-            const sectionTop = section.offsetTop - navHeight - offset;
-            
-            window.scrollTo({
-                top: Math.max(0, sectionTop), // Ensure we don't scroll to negative position
-                behavior: 'smooth'
-            });
         }
     };
     
