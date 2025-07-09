@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soins Énergétiques - Edenitude</title>
+    <meta name="description" content="Découvrez les soins énergétiques chez Edenitude. Harmonisation des énergies vitales pour un bien-être global.">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="service-page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-menu" id="nav-menu">
+                <a href="../index.html#home" class="nav-link" data-translate="nav.home">Accueil</a>
+                <a href="../index.html#about" class="nav-link" data-translate="nav.about">À Propos</a>
+                <a href="../index.html#team" class="nav-link" data-translate="nav.team">Qui sommes-nous</a>
+                <a href="../index.html#services" class="nav-link" data-translate="nav.services">Services</a>
+                <a href="../index.html#testimonials" class="nav-link" data-translate="nav.testimonials">Témoignages</a>
+                <a href="../index.html#contact" class="nav-link" data-translate="nav.contact">Contact</a>
+                <a href="../index.html#book" class="nav-link cta-nav" data-translate="nav.book">Réserver</a>
+                
+                <!-- Language Switcher -->
+                <div class="language-switcher">
+                    <button id="lang-toggle-btn" class="lang-btn" title="Switch to English">
+                        <span id="flag-emoji" class="flag-emoji">🇬🇧</span>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Service Hero Section -->
+    <section class="service-hero">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../index.html" data-translate="breadcrumb.home">Accueil</a>
+                <span class="separator">></span>
+                <a href="../index.html#services" data-translate="breadcrumb.services">Services</a>
+                <span class="separator">></span>
+                <span data-translate="services.energetiques.title">Soins Énergétiques</span>
+            </div>
+            
+            <div class="service-hero-content">
+                <div class="service-hero-text">
+                    <h1 class="service-title" data-translate="services.energetiques.title">Soins Énergétiques</h1>
+                    <p class="service-subtitle">Harmonisez vos énergies vitales pour retrouver un bien-être global et stimuler votre pouvoir d'autoguérison</p>
+                    <div class="service-price-main" data-translate="services.energetiques.price">À partir de €75</div>
+                    <div class="service-duration">
+                        <i class="fas fa-clock"></i>
+                        <span>Durée : 60 à 90 minutes</span>
+                    </div>
+                    <button class="btn btn-primary" onclick="scrollToBooking()">
+                        <span data-translate="service.book_now">Réserver Maintenant</span>
+                        <i class="fas fa-calendar-alt"></i>
+                    </button>
+                </div>
+                <div class="service-hero-image">
+                    <img src="../img/reequilibrage.jpg" alt="Soins énergétiques et rééquilibrage">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Details Section -->
+    <section class="service-details">
+        <div class="container">
+            <div class="service-content">
+                <div class="service-description">
+                    <h2>Qu'est-ce que les Soins Énergétiques ?</h2>
+                    <p>
+                        Les soins énergétiques sont des techniques thérapeutiques douces qui visent à rééquilibrer et harmoniser les énergies subtiles du corps. Ces approches holistiques reconnaissent que nous sommes des êtres énergétiques et que nos déséquilibres physiques, émotionnels ou mentaux peuvent être traités en travaillant sur nos centres énergétiques.
+                    </p>
+                    <p>
+                        Nos praticiens utilisent différentes modalités incluant le travail sur les chakras, l'harmonisation des corps subtils, et les techniques de libération énergétique pour restaurer votre équilibre naturel et stimuler vos capacités d'autoguérison.
+                    </p>
+                </div>
+
+                <div class="service-benefits-detailed">
+                    <h2>Bienfaits des Soins Énergétiques</h2>
+                    <div class="benefits-grid">
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <i class="fas fa-meditation"></i>
+                            </div>
+                            <h3>Réduction du Stress</h3>
+                            <p>Apaise profondément le système nerveux et favorise un état de calme intérieur durable.</p>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <i class="fas fa-yin-yang"></i>
+                            </div>
+                            <h3>Harmonisation Énergétique</h3>
+                            <p>Rééquilibre les centres énergétiques pour restaurer l'harmonie corps-esprit.</p>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <i class="fas fa-magic"></i>
+                            </div>
+                            <h3>Stimulation de l'Autoguérison</h3>
+                            <p>Active les mécanismes naturels de guérison du corps et renforce la vitalité.</p>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <h3>Équilibre Émotionnel</h3>
+                            <p>Aide à libérer les blocages émotionnels et favorise la stabilité émotionnelle.</p>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <h3>Clarté Mentale</h3>
+                            <p>Améliore la concentration, la créativité et la prise de décision.</p>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h3>Renforcement Immunitaire</h3>
+                            <p>Stimule les défenses naturelles et améliore la résistance aux stress.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="treatment-process">
+                    <h2>Comment se déroule une séance ?</h2>
+                    <div class="process-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h3>Évaluation Énergétique</h3>
+                                <p>Analyse de votre état énergétique et identification des déséquilibres à traiter.</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h3>Harmonisation</h3>
+                                <p>Travail sur les centres énergétiques pour rétablir l'équilibre et la circulation.</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h3>Libération</h3>
+                                <p>Dissolution des blocages énergétiques et émotionnels pour libérer les tensions.</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h3>Ancrage</h3>
+                                <p>Stabilisation des nouvelles énergies et conseils pour maintenir l'équilibre.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="what-to-expect">
+                    <h2>À quoi s'attendre ?</h2>
+                    <div class="expect-content">
+                        <div class="expect-item">
+                            <i class="fas fa-tshirt"></i>
+                            <p>Vous restez habillé(e) pendant toute la séance pour votre confort.</p>
+                        </div>
+                        <div class="expect-item">
+                            <i class="fas fa-hands"></i>
+                            <p>Toucher léger ou travail sans contact selon les techniques utilisées.</p>
+                        </div>
+                        <div class="expect-item">
+                            <i class="fas fa-sparkles"></i>
+                            <p>Sensations de chaleur, picotements ou relaxation profonde peuvent survenir.</p>
+                        </div>
+                        <div class="expect-item">
+                            <i class="fas fa-moon"></i>
+                            <p>Effet calmant immédiat et amélioration progressive sur plusieurs jours.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="service-pricing">
+        <div class="container">
+            <h2 data-translate="pricing.title">Tarifs & Options</h2>
+            <div class="pricing-options">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 data-translate="pricing.cabinet">Au Cabinet</h3>
+                        <div class="location-icon"><i class="fas fa-building"></i></div>
+                    </div>
+                    <div class="pricing-details">
+                        <div class="price-item">
+                            <span class="duration">60 min</span>
+                            <span class="price">75€</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="duration">90 min</span>
+                            <span class="price">90€</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 data-translate="pricing.domicile">À Domicile</h3>
+                        <div class="location-icon"><i class="fas fa-home"></i></div>
+                    </div>
+                    <div class="pricing-details">
+                        <div class="price-item">
+                            <span class="duration">60 min</span>
+                            <span class="price">90€*</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="duration">90 min</span>
+                            <span class="price">105€*</span>
+                        </div>
+                        <p class="pricing-note" data-translate="pricing.note">*déplacement en supplément</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="service-booking">
+        <div class="container">
+            <div class="booking-content">
+                <div class="booking-info">
+                    <h2 data-translate="booking.title">Réservez votre séance</h2>
+                    <p>Prêt à harmoniser vos énergies et retrouver votre équilibre naturel ? Contactez-nous pour réserver votre soin énergétique.</p>
+                    
+                    <div class="contact-methods">
+                        <a href="tel:+33684978638" class="contact-method">
+                            <i class="fas fa-phone"></i>
+                            <span>+33 (0)6.84.97.86.38</span>
+                        </a>
+                        <a href="mailto:contact@edenitude.fr" class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <span>contact@edenitude.fr</span>
+                        </a>
+                        <div class="contact-method">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>134 Domaine D'Alzone, 20166 Porticcio</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="booking-form">
+                    <form id="service-booking-form">
+                        <input type="hidden" name="service" value="soins-energetiques">
+                        
+                        <div class="form-group">
+                            <label for="name" data-translate="contact.form.name">Nom Complet</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" data-translate="contact.form.email">Adresse Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone" data-translate="contact.form.phone">Numéro de Téléphone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="duration" data-translate="booking.duration">Durée souhaitée</label>
+                            <select id="duration" name="duration" required>
+                                <option value="">Sélectionnez une durée</option>
+                                <option value="60min">60 minutes</option>
+                                <option value="90min">90 minutes</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="location" data-translate="booking.location">Lieu</label>
+                            <select id="location" name="location" required>
+                                <option value="">Sélectionnez un lieu</option>
+                                <option value="cabinet" data-translate="pricing.cabinet">Au cabinet</option>
+                                <option value="domicile" data-translate="pricing.domicile">À domicile</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" data-translate="contact.form.message">Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Partagez vos objectifs ou préoccupations spécifiques..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">
+                            <span data-translate="booking.submit">Envoyer la demande</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Services -->
+    <section class="related-services">
+        <div class="container">
+            <h2 data-translate="related.title">Services Complémentaires</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="../img/massagehuile.jpg" alt="Massage aux huiles">
+                    </div>
+                    <div class="service-content">
+                        <h3 data-translate="services.huiles.title">Massages aux huiles</h3>
+                        <p data-translate="services.huiles.description">Thérapie manuelle puissante combinée aux bienfaits des huiles essentielles.</p>
+                        <a href="massage-huiles.html" class="btn btn-outline" data-translate="services.learn_more">En Savoir Plus</a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="../img/massagethai.jpg" alt="Massage Thaï">
+                    </div>
+                    <div class="service-content">
+                        <h3 data-translate="services.thai.title">Massage Thaï</h3>
+                        <p data-translate="services.thai.description">Techniques ancestrales pour soulager les douleurs et améliorer la mobilité.</p>
+                        <a href="thai-massage.html" class="btn btn-outline" data-translate="services.learn_more">En Savoir Plus</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="../img/logo.png" alt="Edenitude Logo" class="footer-logo-img">
+                    </div>
+                    <p class="footer-description" data-translate="footer.description">
+                        Votre sanctuaire pour la guérison holistique et le bien-être spirituel.
+                        Découvrez le chemin vers la paix intérieure et une santé optimale.
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-translate="footer.quick_links">Liens Rapides</h4>
+                    <ul class="footer-links">
+                        <li><a href="../index.html#home" data-translate="footer.link_home">Accueil</a></li>
+                        <li><a href="../index.html#about" data-translate="footer.link_about">À Propos</a></li>
+                        <li><a href="../index.html#services" data-translate="footer.link_services">Services</a></li>
+                        <li><a href="../index.html#contact" data-translate="footer.link_contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-translate="footer.contact_info">Contact</h4>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-map-marker-alt"></i> 134 Domaine D'Alzone, 20166 Porticcio</p>
+                        <p><i class="fas fa-phone"></i> +33 (0)6.84.97.86.38</p>
+                        <p><i class="fas fa-envelope"></i> contact@edenitude.fr</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p data-translate="footer.copyright">&copy; 2024 Edenitude. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" onclick="scrollToTop()">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="../script.js"></script>
+    <script>
+        function scrollToBooking() {
+            document.getElementById('booking').scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    </script>
+</body>
+</html>

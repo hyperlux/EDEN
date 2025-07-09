@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amatarot - Edenitude</title>
+    <meta name="description" content="Découvrez l'Amatarot chez Edenitude. Technique traditionnelle thaïlandaise travaillant tendons, muscles et fascias pour mobilité optimale.">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="service-page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-menu" id="nav-menu">
+                <a href="../index.html#home" class="nav-link" data-translate="nav.home">Accueil</a>
+                <a href="../index.html#about" class="nav-link" data-translate="nav.about">À Propos</a>
+                <a href="../index.html#team" class="nav-link" data-translate="nav.team">Qui sommes-nous</a>
+                <a href="../index.html#services" class="nav-link" data-translate="nav.services">Services</a>
+                <a href="../index.html#testimonials" class="nav-link" data-translate="nav.testimonials">Témoignages</a>
+                <a href="../index.html#contact" class="nav-link" data-translate="nav.contact">Contact</a>
+                <a href="../index.html#book" class="nav-link cta-nav" data-translate="nav.book">Réserver</a>
+                
+                <!-- Language Switcher -->
+                <div class="language-switcher">
+                    <button id="lang-toggle-btn" class="lang-btn" title="Switch to English">
+                        <span id="flag-emoji" class="flag-emoji">🇬🇧</span>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Service Hero Section -->
+    <section class="service-hero">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../index.html" data-translate="breadcrumb.home">Accueil</a>
+                <span class="separator">></span>
+                <a href="../index.html#services" data-translate="breadcrumb.services">Services</a>
+                <span class="separator">></span>
+                <span data-translate="services.amatarot.title">Amatarot</span>
+            </div>
+            
+            <div class="service-hero-content">
+                <div class="service-hero-text">
+                    <h1 class="service-title" data-translate="services.amatarot.title">Amatarot</h1>
+                    <p class="service-subtitle">Technique traditionnelle thaïlandaise travaillant profondément tendons, muscles et fascias pour retrouver mobilité et bien-être</p>
+                    <div class="service-price-main" data-translate="services.amatarot.price">À partir de €75</div>
+                    <div class="service-duration">
+                        <i class="fas fa-clock"></i>
+                        <span>Durée : 60 à 90 minutes</span>
+                    </div>
+                    <button class="btn btn-primary" onclick="scrollToBooking()">
+                        <span data-translate="service.book_now">Réserver Maintenant</span>
+                        <i class="fas fa-calendar-alt"></i>
+                    </button>
+                </div>
+                <div class="service-hero-image">
+                    <img src="../img/amatarot.jpg" alt="Amatarot - technique traditionnelle thaïlandaise">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Details Section -->
+    <section class="service-details">
+        <div class="container">
+            <div class="service-content">
+                <div class="service-description">
+                    <h2>Qu'est-ce que l'Amatarot ?</h2>
+                    <p>
+                        L'Amatarot est une technique de massage thérapeutique traditionnelle thaïlandaise qui se concentre sur le travail approfondi des tendons, muscles et fascias. Cette méthode ancestrale utilise des mouvements spécifiques et des pressions ciblées pour libérer les tensions profondes et restaurer la mobilité naturelle du corps.
+                    </p>
+                    <p>
+                        Cette technique se distingue par son approche structurelle qui vise à corriger les déséquilibres posturaux et à optimiser le fonctionnement biomécanique du corps. L'Amatarot travaille sur les chaînes musculaires et fasciales pour créer un alignement harmonieux et durable.
+                    </p>
+                </div>
+
+                <div class="service-benefits-detailed">
+                    <h2>Bienfaits de l'Amatarot</h2>
+                    <div class="benefits-grid">
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <i class="fas fa-dna"></i>
+                            </div>
+                            <h3>Libération des Fascias</h3>
+                            <p>Travail spécifique sur les fascias pour libérer les adhérences et améliorer la mobilité tissulaire.</p>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <i class="fas fa-compress-arrows-alt"></i>
+                            </div>
+                            <h3>Détente Musculaire</h3>
+                            <p>Relâchement profond des tensions musculaires chroniques et des contractures.</p>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <i class="fas fa-bone"></i>
+                            </div>
+                            <h3>Renforcement Tendineux</h3>
+                            <p>Stimulation et tonification des tendons pour améliorer la stabilité articulaire.</p>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <i class="fas fa-arrows-alt"></i>
+                            </div>
+                            <h3>Amélioration Posturale</h3>
+                            <p>Correction des déséquilibres posturaux et optimisation de l'alignement corporel.</p>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <i class="fas fa-running"></i>
+                            </div>
+                            <h3>Mobilité Articulaire</h3>
+                            <p>Restauration de l'amplitude de mouvement et de la fluidité gestuelle.</p>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h3>Prévention des Blessures</h3>
+                            <p>Renforcement des structures pour prévenir les blessures et récidives.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="treatment-process">
+                    <h2>Comment se déroule une séance ?</h2>
+                    <div class="process-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h3>Évaluation Posturale</h3>
+                                <p>Analyse de votre posture et identification des déséquilibres structurels.</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h3>Préparation Tissulaire</h3>
+                                <p>Échauffement des tissus et préparation des zones à traiter.</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h3>Travail Spécifique</h3>
+                                <p>Techniques ciblées sur tendons, muscles et fascias selon vos besoins.</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h3>Intégration</h3>
+                                <p>Mouvements d'intégration pour stabiliser les changements obtenus.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="technique-specifics">
+                    <h2>Spécificités de la Technique</h2>
+                    <div class="techniques-grid">
+                        <div class="technique-item">
+                            <i class="fas fa-hand-rock"></i>
+                            <h3>Pressions Ciblées</h3>
+                            <p>Application de pressions spécifiques sur les points de tension</p>
+                        </div>
+                        <div class="technique-item">
+                            <i class="fas fa-expand-arrows-alt"></i>
+                            <h3>Étirements Assistés</h3>
+                            <p>Étirements passifs pour optimiser la longueur musculaire</p>
+                        </div>
+                        <div class="technique-item">
+                            <i class="fas fa-redo"></i>
+                            <h3>Mobilisations</h3>
+                            <p>Mouvements articulaires pour restaurer la mobilité</p>
+                        </div>
+                        <div class="technique-item">
+                            <i class="fas fa-wave-square"></i>
+                            <h3>Relâchement Myofascial</h3>
+                            <p>Techniques spécifiques pour libérer les fascias</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="what-to-expect">
+                    <h2>À quoi s'attendre ?</h2>
+                    <div class="expect-content">
+                        <div class="expect-item">
+                            <i class="fas fa-tshirt"></i>
+                            <p>Séance pratiquée habillé avec des vêtements souples et confortables.</p>
+                        </div>
+                        <div class="expect-item">
+                            <i class="fas fa-hand-paper"></i>
+                            <p>Alternance entre techniques manuelles douces et travail plus appuyé.</p>
+                        </div>
+                        <div class="expect-item">
+                            <i class="fas fa-battery-three-quarters"></i>
+                            <p>Sensation de libération progressive des tensions et de l'énergie.</p>
+                        </div>
+                        <div class="expect-item">
+                            <i class="fas fa-smile"></i>
+                            <p>Amélioration immédiate de la mobilité et sensation de bien-être.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="indications">
+                    <h2>Indications Thérapeutiques</h2>
+                    <div class="indications-list">
+                        <div class="indication-group">
+                            <h3>Troubles Musculo-Squelettiques</h3>
+                            <ul>
+                                <li>Tensions musculaires chroniques</li>
+                                <li>Raideurs articulaires</li>
+                                <li>Déséquilibres posturaux</li>
+                                <li>Douleurs dorsales</li>
+                            </ul>
+                        </div>
+                        <div class="indication-group">
+                            <h3>Optimisation Performance</h3>
+                            <ul>
+                                <li>Préparation sportive</li>
+                                <li>Récupération post-effort</li>
+                                <li>Amélioration de la mobilité</li>
+                                <li>Prévention des blessures</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="service-pricing">
+        <div class="container">
+            <h2 data-translate="pricing.title">Tarifs & Options</h2>
+            <div class="pricing-options">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 data-translate="pricing.cabinet">Au Cabinet</h3>
+                        <div class="location-icon"><i class="fas fa-building"></i></div>
+                    </div>
+                    <div class="pricing-details">
+                        <div class="price-item">
+                            <span class="duration">60 min</span>
+                            <span class="price">75€</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="duration">90 min</span>
+                            <span class="price">90€</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 data-translate="pricing.domicile">À Domicile</h3>
+                        <div class="location-icon"><i class="fas fa-home"></i></div>
+                    </div>
+                    <div class="pricing-details">
+                        <div class="price-item">
+                            <span class="duration">60 min</span>
+                            <span class="price">90€*</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="duration">90 min</span>
+                            <span class="price">105€*</span>
+                        </div>
+                        <p class="pricing-note" data-translate="pricing.note">*déplacement en supplément</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="service-booking">
+        <div class="container">
+            <div class="booking-content">
+                <div class="booking-info">
+                    <h2 data-translate="booking.title">Réservez votre séance</h2>
+                    <p>Découvrez les bienfaits de l'Amatarot pour optimiser votre mobilité et retrouver un équilibre structurel optimal.</p>
+                    
+                    <div class="contact-methods">
+                        <a href="tel:+33684978638" class="contact-method">
+                            <i class="fas fa-phone"></i>
+                            <span>+33 (0)6.84.97.86.38</span>
+                        </a>
+                        <a href="mailto:contact@edenitude.fr" class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <span>contact@edenitude.fr</span>
+                        </a>
+                        <div class="contact-method">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>134 Domaine D'Alzone, 20166 Porticcio</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="booking-form">
+                    <form id="service-booking-form">
+                        <input type="hidden" name="service" value="amatarot">
+                        
+                        <div class="form-group">
+                            <label for="name" data-translate="contact.form.name">Nom Complet</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" data-translate="contact.form.email">Adresse Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone" data-translate="contact.form.phone">Numéro de Téléphone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="duration" data-translate="booking.duration">Durée souhaitée</label>
+                            <select id="duration" name="duration" required>
+                                <option value="">Sélectionnez une durée</option>
+                                <option value="60min">60 minutes</option>
+                                <option value="90min">90 minutes</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="location" data-translate="booking.location">Lieu</label>
+                            <select id="location" name="location" required>
+                                <option value="">Sélectionnez un lieu</option>
+                                <option value="cabinet" data-translate="pricing.cabinet">Au cabinet</option>
+                                <option value="domicile" data-translate="pricing.domicile">À domicile</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" data-translate="contact.form.message">Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Décrivez vos douleurs, tensions ou objectifs..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">
+                            <span data-translate="booking.submit">Envoyer la demande</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Services -->
+    <section class="related-services">
+        <div class="container">
+            <h2 data-translate="related.title">Services Complémentaires</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="../img/massagethai.jpg" alt="Massage Thaï">
+                    </div>
+                    <div class="service-content">
+                        <h3 data-translate="services.thai.title">Massage Thaï</h3>
+                        <p data-translate="services.thai.description">Techniques douces pour soulager les douleurs et améliorer la mobilité.</p>
+                        <a href="thai-massage.html" class="btn btn-outline" data-translate="services.learn_more">En Savoir Plus</a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="../img/toksen.jpg" alt="Tok Sen">
+                    </div>
+                    <div class="service-content">
+                        <h3 data-translate="services.toksen.title">Tok Sen</h3>
+                        <p data-translate="services.toksen.description">Technique ancestrale Lanna utilisant vibrations rythmiques pour libérer tensions.</p>
+                        <a href="tok-sen.html" class="btn btn-outline" data-translate="services.learn_more">En Savoir Plus</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="../img/logo.png" alt="Edenitude Logo" class="footer-logo-img">
+                    </div>
+                    <p class="footer-description" data-translate="footer.description">
+                        Votre sanctuaire pour la guérison holistique et le bien-être spirituel.
+                        Découvrez le chemin vers la paix intérieure et une santé optimale.
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-translate="footer.quick_links">Liens Rapides</h4>
+                    <ul class="footer-links">
+                        <li><a href="../index.html#home" data-translate="footer.link_home">Accueil</a></li>
+                        <li><a href="../index.html#about" data-translate="footer.link_about">À Propos</a></li>
+                        <li><a href="../index.html#services" data-translate="footer.link_services">Services</a></li>
+                        <li><a href="../index.html#contact" data-translate="footer.link_contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-translate="footer.contact_info">Contact</h4>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-map-marker-alt"></i> 134 Domaine D'Alzone, 20166 Porticcio</p>
+                        <p><i class="fas fa-phone"></i> +33 (0)6.84.97.86.38</p>
+                        <p><i class="fas fa-envelope"></i> contact@edenitude.fr</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p data-translate="footer.copyright">&copy; 2024 Edenitude. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" onclick="scrollToTop()">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="../script.js"></script>
+    <script>
+        function scrollToBooking() {
+            document.getElementById('booking').scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    </script>
+</body>
+</html>

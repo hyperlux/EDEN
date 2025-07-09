@@ -97,6 +97,54 @@ const translations = {
         'services.abdominal.benefit2': 'Équilibre émotionnel',
         'services.abdominal.benefit3': 'Régénération système digestif',
         'services.learn_more': 'En Savoir Plus',
+        'services.pricing.title': 'Tarifs',
+        
+        // Service Pages Translations
+        'breadcrumb.home': 'Accueil',
+        'breadcrumb.services': 'Services',
+        'thai.hero.subtitle': 'Redécouvrez l\'harmonie corporelle grâce aux techniques ancestrales du massage thaï traditionnel',
+        'thai.duration': 'Durée : 60 à 90 minutes',
+        'service.book_now': 'Réserver Maintenant',
+        'thai.what_is.title': 'Qu\'est-ce que le Massage Thaï ?',
+        'thai.what_is.description1': 'Le massage thaï traditionnel, également connu sous le nom de "Nuad Boran", est un art thérapeutique ancestral qui combine pression des doigts, étirements passifs et positions de yoga. Cette technique millénaire vise à rétablir l\'équilibre énergétique du corps en travaillant sur les lignes d\'énergie appelées "Sen".',
+        'thai.what_is.description2': 'Contrairement aux massages occidentaux traditionnels, le massage thaï se pratique habillé sur un matelas au sol, permettant au thérapeute d\'utiliser son poids corporel pour appliquer des pressions précises et profondes tout en guidant le client dans des étirements thérapeutiques.',
+        'thai.benefits.title': 'Bienfaits du Massage Thaï',
+        'thai.benefit1.title': 'Soulagement des Douleurs',
+        'thai.benefit1.description': 'Libère les tensions musculaires et articulaires, particulièrement efficace pour les douleurs chroniques du dos, des épaules et du cou.',
+        'thai.benefit2.title': 'Amélioration de la Mobilité',
+        'thai.benefit2.description': 'Les étirements passifs augmentent la flexibilité et l\'amplitude des mouvements articulaires, redonnant au corps sa liberté de mouvement.',
+        'thai.benefit3.title': 'Rééquilibrage Énergétique',
+        'thai.benefit3.description': 'Harmonise la circulation de l\'énergie vitale dans le corps, favorisant un sentiment de bien-être profond et durable.',
+        'thai.benefit4.title': 'Réduction du Stress',
+        'thai.benefit4.description': 'Apaise le système nerveux et favorise la relaxation mentale, aidant à gérer le stress et l\'anxiété du quotidien.',
+        'thai.benefit5.title': 'Amélioration de la Circulation',
+        'thai.benefit5.description': 'Stimule la circulation sanguine et lymphatique, favorisant l\'élimination des toxines et l\'oxygénation des tissus.',
+        'thai.benefit6.title': 'Amélioration du Sommeil',
+        'thai.benefit6.description': 'Favorise un sommeil réparateur en détendant profondément le corps et l\'esprit.',
+        'thai.process.title': 'Comment se déroule une séance ?',
+        'thai.step1.title': 'Consultation Initiale',
+        'thai.step1.description': 'Échange sur vos besoins, antécédents de santé et zones à traiter spécifiquement.',
+        'thai.step2.title': 'Préparation',
+        'thai.step2.description': 'Installation confortable sur le matelas thérapeutique, vêtements souples recommandés.',
+        'thai.step3.title': 'Traitement',
+        'thai.step3.description': 'Alternance de pressions, pétrissages et étirements guidés selon les besoins identifiés.',
+        'thai.step4.title': 'Intégration',
+        'thai.step4.description': 'Moment de repos pour permettre au corps d\'intégrer les bienfaits du traitement.',
+        'thai.expect.title': 'À quoi s\'attendre ?',
+        'thai.expect.clothing': 'Portez des vêtements confortables et souples. Le massage se pratique habillé.',
+        'thai.expect.duration': 'La séance dure entre 60 et 90 minutes selon vos besoins.',
+        'thai.expect.pressure': 'L\'intensité est adaptée à votre tolérance et vos préférences.',
+        'thai.expect.after': 'Vous ressentirez une sensation de détente profonde et de légèreté.',
+        'pricing.title': 'Tarifs & Options',
+        'pricing.cabinet': 'Au Cabinet',
+        'pricing.domicile': 'À Domicile',
+        'pricing.note': '*déplacement en supplément',
+        'booking.title': 'Réservez votre séance',
+        'booking.description': 'Prêt à découvrir les bienfaits du massage thaï ? Contactez-nous pour réserver votre séance personnalisée.',
+        'booking.duration': 'Durée souhaitée',
+        'booking.location': 'Lieu',
+        'booking.submit': 'Envoyer la demande',
+        'related.title': 'Services Complémentaires',
         
         // Testimonials Section
         'testimonials.title': 'Expériences Clients',
@@ -246,6 +294,53 @@ const translations = {
         'services.abdominal.benefit2': 'Emotional Balance',
         'services.abdominal.benefit3': 'Digestive System Regeneration',
         'services.learn_more': 'Learn More',
+        
+        // Service Pages Translations
+        'breadcrumb.home': 'Home',
+        'breadcrumb.services': 'Services',
+        'thai.hero.subtitle': 'Rediscover body harmony through ancestral traditional Thai massage techniques',
+        'thai.duration': 'Duration: 60 to 90 minutes',
+        'service.book_now': 'Book Now',
+        'thai.what_is.title': 'What is Thai Massage?',
+        'thai.what_is.description1': 'Traditional Thai massage, also known as "Nuad Boran", is an ancient therapeutic art that combines finger pressure, passive stretching and yoga positions. This millennial technique aims to restore the body\'s energy balance by working on energy lines called "Sen".',
+        'thai.what_is.description2': 'Unlike traditional Western massages, Thai massage is practiced clothed on a floor mat, allowing the therapist to use their body weight to apply precise and deep pressure while guiding the client through therapeutic stretches.',
+        'thai.benefits.title': 'Benefits of Thai Massage',
+        'thai.benefit1.title': 'Pain Relief',
+        'thai.benefit1.description': 'Releases muscle and joint tension, particularly effective for chronic pain in the back, shoulders and neck.',
+        'thai.benefit2.title': 'Improved Mobility',
+        'thai.benefit2.description': 'Passive stretches increase flexibility and range of joint movement, giving the body back its freedom of movement.',
+        'thai.benefit3.title': 'Energy Rebalancing',
+        'thai.benefit3.description': 'Harmonizes the circulation of vital energy in the body, promoting a deep and lasting sense of well-being.',
+        'thai.benefit4.title': 'Stress Reduction',
+        'thai.benefit4.description': 'Soothes the nervous system and promotes mental relaxation, helping to manage daily stress and anxiety.',
+        'thai.benefit5.title': 'Improved Circulation',
+        'thai.benefit5.description': 'Stimulates blood and lymphatic circulation, promoting toxin elimination and tissue oxygenation.',
+        'thai.benefit6.title': 'Better Sleep',
+        'thai.benefit6.description': 'Promotes restorative sleep by deeply relaxing body and mind.',
+        'thai.process.title': 'How does a session work?',
+        'thai.step1.title': 'Initial Consultation',
+        'thai.step1.description': 'Discussion about your needs, health history and areas to be treated specifically.',
+        'thai.step2.title': 'Preparation',
+        'thai.step2.description': 'Comfortable installation on the therapeutic mat, flexible clothing recommended.',
+        'thai.step3.title': 'Treatment',
+        'thai.step3.description': 'Alternation of pressure, kneading and guided stretching according to identified needs.',
+        'thai.step4.title': 'Integration',
+        'thai.step4.description': 'Rest time to allow the body to integrate the benefits of the treatment.',
+        'thai.expect.title': 'What to expect?',
+        'thai.expect.clothing': 'Wear comfortable and flexible clothing. The massage is practiced clothed.',
+        'thai.expect.duration': 'The session lasts between 60 and 90 minutes according to your needs.',
+        'thai.expect.pressure': 'The intensity is adapted to your tolerance and preferences.',
+        'thai.expect.after': 'You will feel a sensation of deep relaxation and lightness.',
+        'pricing.title': 'Pricing & Options',
+        'pricing.cabinet': 'At the Office',
+        'pricing.domicile': 'At Home',
+        'pricing.note': '*travel surcharge',
+        'booking.title': 'Book your session',
+        'booking.description': 'Ready to discover the benefits of Thai massage? Contact us to book your personalized session.',
+        'booking.duration': 'Desired duration',
+        'booking.location': 'Location',
+        'booking.submit': 'Send request',
+        'related.title': 'Complementary Services',
         
         // Testimonials Section
         'testimonials.title': 'Client Experiences',
@@ -422,6 +517,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Load testimonials
     loadTestimonials();
+    
+    // Initialize service page navigation
+    initializeServiceNavigation();
 });
 
 async function loadTestimonials() {
@@ -989,6 +1087,40 @@ function throttle(func, limit) {
             setTimeout(() => inThrottle = false, limit);
         }
     };
+}
+
+// ===== SERVICE PAGE NAVIGATION =====
+function initializeServiceNavigation() {
+    // Service page mappings
+    const servicePages = {
+        'thai': 'services/thai-massage.html',
+        'huiles': 'services/massage-huiles.html',
+        'energetiques': 'services/soins-energetiques.html',
+        'pieds': 'services/massage-pieds.html',
+        'toksen': 'services/tok-sen.html',
+        'hotherbals': 'services/hot-herbals.html',
+        'amatarot': 'services/amatarot.html',
+        'abdominal': 'services/massage-abdominal.html'
+    };
+    
+    // Add click handlers to all "En Savoir Plus" buttons
+    const learnMoreButtons = document.querySelectorAll('.service-card .btn-outline');
+    
+    learnMoreButtons.forEach((button, index) => {
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            // Map button index to service
+            const serviceKeys = Object.keys(servicePages);
+            if (index < serviceKeys.length) {
+                const serviceKey = serviceKeys[index];
+                const servicePage = servicePages[serviceKey];
+                
+                // Navigate to service page
+                window.location.href = servicePage;
+            }
+        });
+    });
 }
 
 // Optimize scroll listener with throttle

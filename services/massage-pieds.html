@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Massage des Pieds - Edenitude</title>
+    <meta name="description" content="Découvrez le massage des pieds thérapeutique chez Edenitude. Libération profonde et amélioration de la circulation.">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="service-page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-menu" id="nav-menu">
+                <a href="../index.html#home" class="nav-link" data-translate="nav.home">Accueil</a>
+                <a href="../index.html#about" class="nav-link" data-translate="nav.about">À Propos</a>
+                <a href="../index.html#team" class="nav-link" data-translate="nav.team">Qui sommes-nous</a>
+                <a href="../index.html#services" class="nav-link" data-translate="nav.services">Services</a>
+                <a href="../index.html#testimonials" class="nav-link" data-translate="nav.testimonials">Témoignages</a>
+                <a href="../index.html#contact" class="nav-link" data-translate="nav.contact">Contact</a>
+                <a href="../index.html#book" class="nav-link cta-nav" data-translate="nav.book">Réserver</a>
+                
+                <!-- Language Switcher -->
+                <div class="language-switcher">
+                    <button id="lang-toggle-btn" class="lang-btn" title="Switch to English">
+                        <span id="flag-emoji" class="flag-emoji">🇬🇧</span>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Service Hero Section -->
+    <section class="service-hero">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../index.html" data-translate="breadcrumb.home">Accueil</a>
+                <span class="separator">></span>
+                <a href="../index.html#services" data-translate="breadcrumb.services">Services</a>
+                <span class="separator">></span>
+                <span data-translate="services.pieds.title">Massage des Pieds</span>
+            </div>
+            
+            <div class="service-hero-content">
+                <div class="service-hero-text">
+                    <h1 class="service-title" data-translate="services.pieds.title">Massage des Pieds</h1>
+                    <p class="service-subtitle">Libération subtile et profonde des pieds et des jambes, agissant sur tout l'organisme</p>
+                    <div class="service-price-main" data-translate="services.pieds.price">À partir de €60</div>
+                    <div class="service-duration">
+                        <i class="fas fa-clock"></i>
+                        <span>Durée : 45 à 60 minutes</span>
+                    </div>
+                    <button class="btn btn-primary" onclick="scrollToBooking()">
+                        <span data-translate="service.book_now">Réserver Maintenant</span>
+                        <i class="fas fa-calendar-alt"></i>
+                    </button>
+                </div>
+                <div class="service-hero-image">
+                    <img src="../img/foot_massage.jpg" alt="Massage des pieds thérapeutique">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Details Section -->
+    <section class="service-details">
+        <div class="container">
+            <div class="service-content">
+                <div class="service-description">
+                    <h2>Le Massage des Pieds Thérapeutique</h2>
+                    <p>
+                        Le massage des pieds est bien plus qu'un simple moment de détente. Selon les principes de la réflexologie et de la médecine traditionnelle, nos pieds sont le miroir de notre corps entier. Chaque zone correspond à un organe ou une fonction spécifique, permettant d'agir sur l'ensemble de l'organisme.
+                    </p>
+                    <p>
+                        Cette technique combine massage thérapeutique profond, stimulation des points réflexes et travail énergétique pour libérer les tensions, améliorer la circulation et harmoniser les fonctions corporelles. Un véritable voyage de bien-être qui commence par vos pieds.
+                    </p>
+                </div>
+
+                <div class="service-benefits-detailed">
+                    <h2>Bienfaits du Massage des Pieds</h2>
+                    <div class="benefits-grid">
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <i class="fas fa-heartbeat"></i>
+                            </div>
+                            <h3>Amélioration de la Circulation</h3>
+                            <p>Stimule la circulation sanguine et lymphatique, soulageant jambes lourdes et gonflements.</p>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <h3>Détente Profonde</h3>
+                            <p>Procure une relaxation immédiate qui se diffuse dans tout le corps.</p>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <i class="fas fa-network-wired"></i>
+                            </div>
+                            <h3>Connexion Énergétique</h3>
+                            <p>Rétablit l'équilibre énergétique et stimule les capacités d'autoguérison.</p>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <i class="fas fa-bed"></i>
+                            </div>
+                            <h3>Amélioration du Sommeil</h3>
+                            <p>Favorise un sommeil réparateur grâce à la détente profonde obtenue.</p>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h3>Réduction du Stress</h3>
+                            <p>Libère les tensions accumulées et apaise le système nerveux.</p>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <i class="fas fa-shield-virus"></i>
+                            </div>
+                            <h3>Stimulation Immunitaire</h3>
+                            <p>Renforce les défenses naturelles par la stimulation des points réflexes.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="treatment-process">
+                    <h2>Déroulement d'une séance</h2>
+                    <div class="process-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h3>Accueil et Installation</h3>
+                                <p>Échange sur vos besoins et installation confortable dans un fauteuil adapté.</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h3>Préparation</h3>
+                                <p>Nettoyage et préparation des pieds avec des produits naturels.</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h3>Massage Thérapeutique</h3>
+                                <p>Technique combinant massage profond et stimulation des points réflexes.</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h3>Finalisation</h3>
+                                <p>Moment de détente et conseils pour prolonger les bienfaits.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="what-to-expect">
+                    <h2>À quoi s'attendre ?</h2>
+                    <div class="expect-content">
+                        <div class="expect-item">
+                            <i class="fas fa-shoe-prints"></i>
+                            <p>Il suffit de pouvoir découvrir vos pieds et vos mollets facilement.</p>
+                        </div>
+                        <div class="expect-item">
+                            <i class="fas fa-hand-holding-water"></i>
+                            <p>Utilisation d'huiles et de baumes naturels pour optimiser le massage.</p>
+                        </div>
+                        <div class="expect-item">
+                            <i class="fas fa-smile"></i>
+                            <p>Sensation immédiate de légèreté et de bien-être.</p>
+                        </div>
+                        <div class="expect-item">
+                            <i class="fas fa-walking"></i>
+                            <p>Amélioration durable de la circulation et de la mobilité.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="service-pricing">
+        <div class="container">
+            <h2 data-translate="pricing.title">Tarifs & Options</h2>
+            <div class="pricing-options">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 data-translate="pricing.cabinet">Au Cabinet</h3>
+                        <div class="location-icon"><i class="fas fa-building"></i></div>
+                    </div>
+                    <div class="pricing-details">
+                        <div class="price-item">
+                            <span class="duration">45 min</span>
+                            <span class="price">60€</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="duration">60 min</span>
+                            <span class="price">75€</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 data-translate="pricing.domicile">À Domicile</h3>
+                        <div class="location-icon"><i class="fas fa-home"></i></div>
+                    </div>
+                    <div class="pricing-details">
+                        <div class="price-item">
+                            <span class="duration">45 min</span>
+                            <span class="price">75€*</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="duration">60 min</span>
+                            <span class="price">90€*</span>
+                        </div>
+                        <p class="pricing-note" data-translate="pricing.note">*déplacement en supplément</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="service-booking">
+        <div class="container">
+            <div class="booking-content">
+                <div class="booking-info">
+                    <h2 data-translate="booking.title">Réservez votre séance</h2>
+                    <p>Offrez-vous ce moment de détente unique et découvrez les bienfaits du massage des pieds. Contactez-nous pour réserver.</p>
+                    
+                    <div class="contact-methods">
+                        <a href="tel:+33684978638" class="contact-method">
+                            <i class="fas fa-phone"></i>
+                            <span>+33 (0)6.84.97.86.38</span>
+                        </a>
+                        <a href="mailto:contact@edenitude.fr" class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <span>contact@edenitude.fr</span>
+                        </a>
+                        <div class="contact-method">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>134 Domaine D'Alzone, 20166 Porticcio</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="booking-form">
+                    <form id="service-booking-form">
+                        <input type="hidden" name="service" value="massage-pieds">
+                        
+                        <div class="form-group">
+                            <label for="name" data-translate="contact.form.name">Nom Complet</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" data-translate="contact.form.email">Adresse Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone" data-translate="contact.form.phone">Numéro de Téléphone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="duration" data-translate="booking.duration">Durée souhaitée</label>
+                            <select id="duration" name="duration" required>
+                                <option value="">Sélectionnez une durée</option>
+                                <option value="45min">45 minutes</option>
+                                <option value="60min">60 minutes</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="location" data-translate="booking.location">Lieu</label>
+                            <select id="location" name="location" required>
+                                <option value="">Sélectionnez un lieu</option>
+                                <option value="cabinet" data-translate="pricing.cabinet">Au cabinet</option>
+                                <option value="domicile" data-translate="pricing.domicile">À domicile</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" data-translate="contact.form.message">Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Mentionnez vos besoins ou préoccupations spécifiques..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">
+                            <span data-translate="booking.submit">Envoyer la demande</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Services -->
+    <section class="related-services">
+        <div class="container">
+            <h2 data-translate="related.title">Services Complémentaires</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="../img/reequilibrage.jpg" alt="Soins énergétiques">
+                    </div>
+                    <div class="service-content">
+                        <h3 data-translate="services.energetiques.title">Soins énergétiques</h3>
+                        <p data-translate="services.energetiques.description">Harmonisez vos énergies vitales pour un bien-être global.</p>
+                        <a href="soins-energetiques.html" class="btn btn-outline" data-translate="services.learn_more">En Savoir Plus</a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="../img/massagethai.jpg" alt="Massage Thaï">
+                    </div>
+                    <div class="service-content">
+                        <h3 data-translate="services.thai.title">Massage Thaï</h3>
+                        <p data-translate="services.thai.description">Techniques douces pour soulager les douleurs et améliorer la mobilité.</p>
+                        <a href="thai-massage.html" class="btn btn-outline" data-translate="services.learn_more">En Savoir Plus</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="../img/logo.png" alt="Edenitude Logo" class="footer-logo-img">
+                    </div>
+                    <p class="footer-description" data-translate="footer.description">
+                        Votre sanctuaire pour la guérison holistique et le bien-être spirituel.
+                        Découvrez le chemin vers la paix intérieure et une santé optimale.
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-translate="footer.quick_links">Liens Rapides</h4>
+                    <ul class="footer-links">
+                        <li><a href="../index.html#home" data-translate="footer.link_home">Accueil</a></li>
+                        <li><a href="../index.html#about" data-translate="footer.link_about">À Propos</a></li>
+                        <li><a href="../index.html#services" data-translate="footer.link_services">Services</a></li>
+                        <li><a href="../index.html#contact" data-translate="footer.link_contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-translate="footer.contact_info">Contact</h4>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-map-marker-alt"></i> 134 Domaine D'Alzone, 20166 Porticcio</p>
+                        <p><i class="fas fa-phone"></i> +33 (0)6.84.97.86.38</p>
+                        <p><i class="fas fa-envelope"></i> contact@edenitude.fr</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p data-translate="footer.copyright">&copy; 2024 Edenitude. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" onclick="scrollToTop()">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="../script.js"></script>
+    <script>
+        function scrollToBooking() {
+            document.getElementById('booking').scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    </script>
+</body>
+</html>
