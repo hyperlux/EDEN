@@ -796,7 +796,8 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden; /* Prevent content spillover */
+    overflow: visible; /* Allow arrows to be visible outside */
+    padding: 0 4rem; /* Add padding to accommodate arrows */
 }
 
 .testimonial {
@@ -890,12 +891,12 @@ button {
 }
 
 .carousel-arrow {
-    background: rgba(255, 255, 255, 0.9);
-    border: 2px solid var(--primary-color);
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    font-size: 1.5rem;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    width: auto;
+    height: auto;
+    font-size: 2rem;
     color: var(--primary-color);
     cursor: pointer;
     position: absolute;
@@ -906,22 +907,20 @@ button {
     align-items: center;
     justify-content: center;
     z-index: 10;
-    box-shadow: var(--shadow-light);
+    padding: 0.5rem;
 }
 
 .carousel-arrow:hover {
-    background: var(--primary-color);
-    color: var(--white);
-    transform: translateY(-50%) scale(1.1);
-    box-shadow: var(--shadow-medium);
+    color: var(--primary-dark);
+    transform: translateY(-50%) scale(1.2);
 }
 
 .prev-arrow {
-    left: 1rem; /* More visible positioning */
+    left: 0; /* Position at the edge of the carousel container */
 }
 
 .next-arrow {
-    right: 1rem; /* More visible positioning */
+    right: 0; /* Position at the edge of the carousel container */
 }
 
 /* Responsive adjustments for arrows and testimonials */
