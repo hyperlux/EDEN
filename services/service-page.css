@@ -257,7 +257,7 @@
     font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
     color: #2c3e50;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
 }
 
 .pricing-options {
@@ -266,6 +266,7 @@
     gap: 2rem;
     max-width: 800px;
     margin: 0 auto;
+    align-items: start;
 }
 
 .pricing-card {
@@ -274,6 +275,10 @@
     overflow: hidden;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1.5rem;
 }
 
 .pricing-card:hover {
@@ -287,6 +292,9 @@
     padding: 2rem;
     text-align: center;
     position: relative;
+    border-radius: 15px;
+    flex-shrink: 0;
+    margin-top: 3rem;
 }
 
 .pricing-header h3 {
@@ -301,6 +309,14 @@
 
 .pricing-details {
     padding: 2rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.price-items-wrapper {
+    flex: 1;
 }
 
 .price-item {
@@ -332,6 +348,14 @@
     font-style: italic;
     margin-top: 1rem;
     text-align: center;
+    min-height: 2.5rem;
+}
+
+.pricing-note-placeholder {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    min-height: 2.5rem;
+    visibility: hidden;
 }
 
 /* Booking Section */
