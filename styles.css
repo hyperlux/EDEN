@@ -356,7 +356,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, var(--cream) 0%, var(--white) 100%);
+    background: var(--white);
     position: relative;
     overflow: hidden;
     padding: 6rem 1.5rem 4rem;
