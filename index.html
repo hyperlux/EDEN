@@ -9,6 +9,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="img/logo.png" as="image" type="image/png">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"></noscript>
+    
+    <!-- Browser caching and performance meta tags -->
+    <meta http-equiv="Cache-Control" content="public, max-age=31536000">
+    <meta http-equiv="Expires" content="Thu, 31 Dec 2025 23:59:59 GMT">
+    <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <!-- Canonical URL -->
@@ -726,7 +736,7 @@
         <div class="hero-content">
             <div class="hero-decorative">
                 <div class="lotus-icon">
-                    <img src="img/logo.png" alt="Edenitude Logo" class="hero-logo-img">
+                    <img src="img/logo.png" alt="Edenitude - Centre de massage thaï et thérapies holistiques à Porticcio, Corsica" class="hero-logo-img" width="400" height="400" fetchpriority="high">
                 </div>
             </div>
             
@@ -800,7 +810,7 @@
                 </div>
                 
                 <div class="about-visual">
-                    <img src="img/vector.png" alt="Big Lotus" class="about-big-lotus-img">
+                    <img src="img/vector.png" alt="Fleur de lotus symbolisant l'harmonie et la sérénité du massage thaï" class="about-big-lotus-img" width="400" height="400" loading="lazy">
                 </div>
             </div>
         </div>
@@ -869,7 +879,7 @@
             <div class="services-grid">
                 <div class="service-card" data-aos="fade-up">
                     <div class="service-image">
-                        <img src="img/massagethai.jpg" alt="Thaï massage - Des techniques douces pour soulager vos douleurs">
+                        <img src="img/massagethai.jpg" alt="Thaï massage - Des techniques douces pour soulager vos douleurs" width="350" height="200" loading="lazy">
                     </div>
                     <div class="service-content">
                         <h3 class="service-title" data-translate="services.thai.title">Thaï massage</h3>
@@ -888,7 +898,7 @@
                 
                 <div class="service-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="service-image">
-                        <img src="img/massagehuile.jpg" alt="Massage aux huiles thérapeutiques - relaxation profonde et travail des fascias">
+                        <img src="img/massagehuile.jpg" alt="Massage aux huiles thérapeutiques - relaxation profonde et travail des fascias" width="350" height="200" loading="lazy">
                     </div>
                     <div class="service-content">
                         <h3 class="service-title" data-translate="services.huiles.title">Massages aux huiles</h3>
@@ -907,7 +917,7 @@
                 
                 <div class="service-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="service-image">
-                        <img src="img/reequilibrage.jpg" alt="Soins énergétiques et rééquilibrage - harmonisation des énergies vitales pour le bien-être global">
+                        <img src="img/reequilibrage.jpg" alt="Soins énergétiques et rééquilibrage - harmonisation des énergies vitales pour le bien-être global" width="350" height="200" loading="lazy">
                     </div>
                     <div class="service-content">
                         <h3 class="service-title" data-translate="services.energetiques.title">Soins énergétiques</h3>
@@ -926,7 +936,7 @@
 
                 <div class="service-card" data-aos="fade-up" data-aos-delay="300">
                     <div class="service-image">
-                        <img src="img/foot_massage.jpg" alt="Massage des pieds thérapeutique - libération subtile et amélioration de la circulation">
+                        <img src="img/foot_massage.jpg" alt="Massage des pieds thérapeutique - libération subtile et amélioration de la circulation" width="350" height="200" loading="lazy">
                     </div>
                     <div class="service-content">
                         <h3 class="service-title" data-translate="services.pieds.title">Massage des pieds</h3>
@@ -945,7 +955,7 @@
 
                 <div class="service-card" data-aos="fade-up" data-aos-delay="400">
                     <div class="service-image">
-                        <img src="img/toksen.jpg" alt="Tok Sen - technique ancestrale Lanna avec vibrations rythmiques pour libérer muscles et articulations">
+                        <img src="img/toksen.jpg" alt="Tok Sen - technique ancestrale Lanna avec vibrations rythmiques pour libérer muscles et articulations" width="350" height="200" loading="lazy">
                     </div>
                     <div class="service-content">
                         <h3 class="service-title" data-translate="services.toksen.title">Tok Sen</h3>
@@ -964,7 +974,7 @@
 
                 <div class="service-card" data-aos="fade-up" data-aos-delay="500">
                     <div class="service-image">
-                        <img src="img/hotherbals.jpg" alt="Hot herbals - travail profond des sen lines pour rééquilibrer les flux énergétiques et sanguins">
+                        <img src="img/hotherbals.jpg" alt="Hot herbals - travail profond des sen lines pour rééquilibrer les flux énergétiques et sanguins" width="350" height="200" loading="lazy">
                     </div>
                     <div class="service-content">
                         <h3 class="service-title" data-translate="services.hotherbals.title">Hot herbals</h3>
@@ -983,7 +993,7 @@
 
                 <div class="service-card" data-aos="fade-up" data-aos-delay="600">
                     <div class="service-image">
-                        <img src="img/amatarot.jpg" alt="Amatarot - technique ancestrale de médecine traditionnelle pour régénération des tissus et libération nerveuse">
+                        <img src="img/amatarot.jpg" alt="Amatarot - technique ancestrale de médecine traditionnelle pour régénération des tissus et libération nerveuse" width="350" height="200" loading="lazy">
                     </div>
                     <div class="service-content">
                         <h3 class="service-title" data-translate="services.amatarot.title">Amatarot</h3>
@@ -1002,7 +1012,7 @@
 
                 <div class="service-card" data-aos="fade-up" data-aos-delay="700">
                     <div class="service-image">
-                        <img src="img/massageabdo.jpg" alt="Massage Abdominal Wissin nuad tong boran - massage détoxifiant et énergisant pour équilibrer le système corporel">
+                        <img src="img/massageabdo.jpg" alt="Massage Abdominal Wissin nuad tong boran - massage détoxifiant et énergisant pour équilibrer le système corporel" width="350" height="200" loading="lazy">
                     </div>
                     <div class="service-content">
                         <h3 class="service-title" data-translate="services.abdominal.title">Massage Abdominal</h3>
@@ -1170,7 +1180,7 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <div class="footer-logo">
-                        <img src="img/logo.png" alt="Edenitude Logo" class="footer-logo-img">
+                        <img src="img/logo.png" alt="Edenitude - Centre de massage thaï à Porticcio, Corsica" class="footer-logo-img" width="60" height="60" loading="lazy">
                     </div>
                     <p class="footer-description" data-translate="footer.description">
                         Votre sanctuaire pour la guérison holistique et le bien-être spirituel.
