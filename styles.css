@@ -407,7 +407,7 @@ button {
 }
 
 .hero-logo-img {
-    width: 25rem; /* 50% of original 7.875rem */
+    width: 22.5rem; /* 20% bigger than 18.75rem */
     height: auto;
     display: block;
     margin: 0 auto;
@@ -1227,7 +1227,6 @@ img {
 /* Prevent layout shift for images */
 .service-image img,
 .about-big-lotus-img,
-.hero-logo-img,
 .footer-logo-img {
     width: 100%;
     height: auto;
