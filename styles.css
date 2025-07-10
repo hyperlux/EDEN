@@ -320,6 +320,7 @@ button {
         transition: var(--transition);
         border-left: 1px solid rgba(212, 165, 116, 0.1);
         gap: 1.5rem;
+        margin-left: 0; /* Reset the 15% margin for mobile */
     }
     
     .nav-menu.active {

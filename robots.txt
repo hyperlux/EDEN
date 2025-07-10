@@ -1,0 +1,29 @@
+# Robots.txt for Edenitude - Thai Massage & Holistic Therapies
+# Website: https://edenitude.fr
+
+User-agent: *
+Allow: /
+
+# Allow crawling of main content areas
+Allow: /services/
+Allow: /img/
+Allow: /*.css
+Allow: /*.js
+
+# Disallow crawling of potentially sensitive areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /wp-admin/
+Disallow: /wp-content/uploads/
+Disallow: /cgi-bin/
+Disallow: /*.log
+Disallow: /*.sql
+Disallow: /backup/
+Disallow: /temp/
+Disallow: /tmp/
+
+# Sitemap location
+Sitemap: https://edenitude.fr/sitemap.xml
+
+# Crawl-delay for politeness (optional)
+Crawl-delay: 1
